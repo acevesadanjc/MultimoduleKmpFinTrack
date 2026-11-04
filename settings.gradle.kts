@@ -41,6 +41,7 @@ includeBuild("build-logic")
 
 //Features
 includeBuild("features/splash")
+includeBuild("features/login")
 
 include(":androidApp")
 include(":shared")

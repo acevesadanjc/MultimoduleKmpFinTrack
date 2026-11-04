@@ -1,0 +1,6 @@
+<resources >
+    <!-- None -->
+    <string name="idle">Idle</string>
+    <string name="example_device">Example Device</string>
+    <string name="example_tablet">Example Tablet</string>
+</resources>

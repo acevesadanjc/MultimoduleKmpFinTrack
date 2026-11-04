@@ -74,6 +74,7 @@ kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "lib-
 
 # Features
 feature-splash  = { module = "com.kmp.feature:splash", version = "unspecified" }
+feature-login  = { module = "com.kmp.feature:login", version = "unspecified" }
 
 [bundles]
 commonApp-libs = [
@@ -110,9 +111,11 @@ iosApp-libs = [
 ]
 features-ecuador = [
     "feature-splash",
+    "feature-login"
 ]
 features-cenam = [
     "feature-splash",
+    "feature-login"
 ]
 apis-gms-libs = [
     "firebase-analytics"

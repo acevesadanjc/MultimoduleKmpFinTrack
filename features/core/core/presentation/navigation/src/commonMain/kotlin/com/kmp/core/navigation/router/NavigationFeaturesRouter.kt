@@ -14,4 +14,5 @@ interface NavigationFeaturesRouter {
     //fun getScreenAfterSplash(): Screen
     // Define función para flujos ya establecidos.
     fun getSplashScreen(): Screen
+    fun getLoginScreen(): Screen
 }

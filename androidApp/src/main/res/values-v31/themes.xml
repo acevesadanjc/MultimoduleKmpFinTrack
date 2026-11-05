@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#345CDE</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/avd_launcher_bounce</item>
+        <item name="android:windowSplashScreenAnimationDuration">800</item>
+        <item name="postSplashScreenTheme">@style/Theme.HostApp</item>
+    </style>
+</resources>

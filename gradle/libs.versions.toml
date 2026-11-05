@@ -1,0 +1,140 @@
+[versions]
+android-compileSdk = "37"
+android-minSdk = "24"
+android-targetSdk = "37"
+jvm-compileVersion = "21"
+
+# Application
+app-version-name = "1.0.0"
+app-version-code = "1"
+app-namespace = "com.kmp.host"
+app-application-id = "com.kmp.host"
+app-name = "HostApp"
+
+# Libraries
+lib-androidx-activity = "1.13.0"
+lib-splashscreen = "1.2.0"
+lib-napier = "2.7.1"
+lib-koin = "4.2.2"
+lib-kmp-splash = "1.7.1"
+lib-firebase-analytics = "24.0.0"
+lib-agconnect = "1.9.6.300"
+lib-huawei-analytics = "6.12.0.301"
+
+# Plugins
+lib-agp = "9.3.3"
+lib-kotlin = "2.4.20"
+lib-composeMultiplatform = "1.12.1"
+lib-kotlinx-coroutines = "1.11.0"
+lib-koin-compiler = "1.2.1"
+lib-google-services = "4.5.0"
+
+[libraries]
+# Compose
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "lib-composeMultiplatform" }
+
+# Compose Android
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "lib-androidx-activity" }
+
+# Coroutines
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "lib-kotlinx-coroutines"}
+
+# Logs
+kmp-napier = { module = "io.github.aakira:napier", version.ref = "lib-napier" }
+
+# Koin
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "lib-koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "lib-koin" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "lib-koin" }
+
+# AndroidX
+androidx-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "lib-splashscreen" }
+
+# Android Gradle for use (convention y hms)
+android-gradle-convention = { module = "com.android.tools.build:gradle", version.ref = "lib-agp"  }
+
+# Kotlin Gradle convention
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "lib-kotlin" }
+
+# Splash KMP
+kmp-Splash-Runtime = { module = "io.github.kmpbits:splash-runtime", version.ref = "lib-kmp-splash" }
+
+# Compose Resources
+components-respurces = { module = "org.jetbrains.compose.components:components-resources", version.ref = "lib-composeMultiplatform" }
+
+# GMS / Firebase
+firebase-analytics = { module = "com.google.firebase:firebase-analytics", version.ref = "lib-firebase-analytics" }
+
+# HMS / Huawei
+huawei-analytics = { module = "com.huawei.hms:hianalytics", version.ref = "lib-huawei-analytics" }
+huawei-agconnect-plugin = { module = "com.huawei.agconnect:agcp", version.ref = "lib-agconnect" }
+
+# Test
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "lib-kotlin" }
+
+# Features
+feature-splash  = { module = "com.kmp.feature:splash", version = "unspecified" }
+
+[bundles]
+commonApp-libs = [
+    # Proporciona: Runtime de Compose Multiplatform para las compilaciones Android e iOS
+    'compose-runtime',
+    # Proporciona: Coroutines para concurrencia y manejo de flujos
+    'kotlinx-coroutines-core',
+    # Proporciona: Inicializacion de Koin para inyeccion de dependencias
+    'koin-core',
+    # Proporciona: Anotaciones de Koin para la generacion de codigo
+    'koin-annotations',
+    # Proporciona: Runtime de Splash KMP para la inicializacion de splashScreen
+    'kmp-Splash-Runtime',
+    # Proporciona: Resources - obtener los recursos de commonMain (composeResources)
+    'components-respurces'
+]
+androidApp-libs = [
+    # Proporciona: Uso de splashScreen
+    'androidx-splashscreen',
+    # Proporciona: Inicializacion de Napier (AND, IOS) KMP
+    'kmp-napier',
+    # Proporciona: Inicializacion de Koin para inyeccion de dependencias
+    'koin-android',
+    # Proporciona: Anotaciones de Koin para la generacion de codigo
+    'koin-annotations',
+    # Proporciona: Runtime de Splash KMP para la inicializacion de splashScreen
+    'kmp-Splash-Runtime',
+    # Proporciona: Actividad de Compose para la gestion de la interfaz de usuario
+    'androidx-activity-compose'
+]
+iosApp-libs = [
+    # Proporciona: Inicializacion de Napier para logging en iOS
+    'kmp-napier',
+]
+features-ecuador = [
+    "feature-splash",
+]
+features-cenam = [
+    "feature-splash",
+]
+apis-gms-libs = [
+    "firebase-analytics"
+]
+apis-hms-libs = [
+    "huawei-analytics"
+]
+
+[plugins]
+# KMP
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "lib-kotlin" }
+androidMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "lib-agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "lib-composeMultiplatform" }
+# Android
+android-application = { id = "com.android.application", version.ref = "lib-agp" }
+# Compose
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "lib-kotlin" }
+# Koin
+koinCompiler = { id = "io.insert-koin.compiler.plugin", version.ref = "lib-koin-compiler" }
+# Convention-Plugins
+kommonVersions = { id = "com.kmp.commonversion", version = "unspecified" }
+# Splash KMP
+kmpSplash = { id = "io.github.kmpbits.splash", version.ref = "lib-kmp-splash" }
+# GMS / Google Services
+google-services = { id = "com.google.gms.google-services", version.ref = "lib-google-services" }

@@ -1,0 +1,69 @@
+[versions]
+android-compileSdk = "37"
+android-minSdk = "24"
+android-targetSdk = "37"
+jvm-compileVersion = "21"
+
+# Libraries
+lib-lifecycle-viewmodel = "2.11.0"
+lib-kotlin-coroutines = "1.11.0"
+lib-koin = "4.2.2"
+
+# Plugins
+lib-agp = "9.3.3"
+lib-kotlin = "2.4.20"
+lib-composeMultiplatform = "1.12.1"
+lib-koin-compiler = "1.2.1"
+
+[libraries]
+# Lifecycle para KMP (Common)
+androidx-lifecycle-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel", version.ref = "lib-lifecycle-viewmodel" }
+
+# Coroutines Core (Para Flow y Scope)
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "lib-kotlin-coroutines" }
+
+# Resources
+compose-components-resources  = { module = "org.jetbrains.compose.components:components-resources", version.ref = "lib-composeMultiplatform" }
+
+# Koin
+koin-core               = { module = "io.insert-koin:koin-core", version.ref = "lib-koin" }
+koin-annotations        = { module = "io.insert-koin:koin-annotations", version.ref = "lib-koin" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "lib-koin" }
+
+# Test
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "lib-kotlin" }
+
+# CORE
+core-database   = { module = "com.kmp.core:database", version = "unspecified" }
+core-datastore  = { module = "com.kmp.core:datastore", version = "unspecified" }
+core-navigation = { module = "com.kmp.core:navigation", version = "unspecified" }
+core-design     = { module = "com.kmp.core:design", version = "unspecified" }
+core-network    = { module = "com.kmp.core:network", version = "unspecified" }
+core-tools      = { module = "com.kmp.core:tools", version = "unspecified" }
+
+[bundles]
+feature-base-libs = [
+    # Core
+    'core-tools',
+    # Proporciona: Viewmodel y viewModelScope (KMP)
+    'androidx-lifecycle-viewmodel',
+    # Proporciona: StateFlow, MutableStateFlow y CoroutineScope
+    'kotlinx-coroutines-core',
+    # Proporciona: Resources - obtener los recursos de commonMain (composeResources)
+    'compose-components-resources',
+    # Proporciona: uso de ViewModels dentro de compose
+    'koin-compose-viewmodel',
+    'koin-core',
+    'koin-annotations'
+]
+
+[plugins]
+# Android
+androidApplication = { id = "com.android.application", version.ref = "lib-agp" }
+# KMP
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "lib-kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "lib-composeMultiplatform" }
+androidMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "lib-agp" }
+# Compiler
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "lib-kotlin" }
+koinCompiler = { id = "io.insert-koin.compiler.plugin", version.ref = "lib-koin-compiler" }

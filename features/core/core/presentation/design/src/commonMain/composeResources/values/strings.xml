@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- String -->
+    <string name="example">Example</string>
+
+    <!-- Buttons -->
+    <string name="primary_button">Primary Button</string>
+    <string name="primary_button_elevated">Primary Button Elevated</string>
+    <string name="outlined_button">Outlined Button</string>
+
+    <!-- Dialog -->
+    <string name="tittle">Tittle</string>
+    <string name="sub_tittle">Sub Tittle</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

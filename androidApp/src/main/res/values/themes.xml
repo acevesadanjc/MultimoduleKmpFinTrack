@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 1. Este es el tema que verán mientras la app carga -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Color de fondo del Splash del sistema -->
+        <item name="windowSplashScreenBackground">#345CDE</item>
+        <!-- Icono central (el mismo que configuramos antes) -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/avd_launcher_bounce</item>
+        <!-- Tema al que cambiará la app automáticamente después de cargar -->
+        <item name="postSplashScreenTheme">@style/Theme.HostApp</item>
+    </style>
+
+    <!-- 2. Este es el tema real de tu aplicación (sin barra de arriba) -->
+    <style name="Theme.HostApp" parent="android:Theme.Material.Light.NoActionBar">
+        <!--<item name="android:statusBarColor">#345CDE</item>-->
+    </style>
+</resources>

@@ -1,0 +1,5808 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-06T20:42:40.4941517Z",
+  "root": "C:\\Users\\gamis\\Documents\\Android\\SDK\\Host",
+  "files": [
+    {
+      "path": "androidApp/src/cenam/kotlin/com/kmp/host/di/HostApp.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "com.kmp.feature.login.featureUi.di.LoginModule",
+        "com.kmp.feature.splash.featureUi.di.SplashModule",
+        "com.kmp.feature.welcome.featureUi.di.WelcomeModule",
+        "org.koin.core.annotation.KoinApplication"
+      ],
+      "symbols": [
+        {
+          "name": "HostApp",
+          "kind": "class",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/cenam/kotlin/com/kmp/host/di/HostModule.kt",
+      "language": "kotlin",
+      "lines": 23,
+      "imports": [
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.host.navigation.NavigationFeaturesRouterImpl",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.Dispatchers",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "HostModule",
+          "kind": "class",
+          "line": 15
+        },
+        {
+          "name": "ioDispatcher",
+          "kind": "fun",
+          "line": 18,
+          "container": "HostModule"
+        },
+        {
+          "name": "provideNavigationRouter",
+          "kind": "fun",
+          "line": 21,
+          "container": "HostModule"
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/cenam/kotlin/com/kmp/host/di/KoinInitializer.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "org.koin.dsl.KoinAppDeclaration",
+        "org.koin.plugin.module.dsl.startKoin"
+      ],
+      "symbols": [
+        {
+          "name": "initKoin",
+          "kind": "fun",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/cenam/kotlin/com/kmp/host/navigation/NavigationFeaturesRouterImpl.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "cafe.adriel.voyager.core.screen.Screen",
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.feature.login.featureUi.presentation.navigation.LoginScreenInstance",
+        "com.kmp.feature.splash.featureUi.presentation.navigation.SplashScreenInstance",
+        "com.kmp.feature.welcome.featureUi.presentation.navigation.WelcomeScreenInstance"
+      ],
+      "symbols": [
+        {
+          "name": "NavigationFeaturesRouterImpl",
+          "kind": "class",
+          "line": 9
+        },
+        {
+          "name": "getScreenAfterSplash",
+          "kind": "fun",
+          "line": 11,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getSplashScreen",
+          "kind": "fun",
+          "line": 13,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getWelcomeScreen",
+          "kind": "fun",
+          "line": 14,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getLoginScreen",
+          "kind": "fun",
+          "line": 15,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/ecuador/kotlin/com/kmp/host/di/HostApp.kt",
+      "language": "kotlin",
+      "lines": 17,
+      "imports": [
+        "com.kmp.feature.login.featureUi.di.LoginModule",
+        "com.kmp.feature.splash.featureUi.di.SplashModule",
+        "com.kmp.feature.welcome.featureUi.di.WelcomeModule",
+        "org.koin.core.annotation.KoinApplication"
+      ],
+      "symbols": [
+        {
+          "name": "HostApp",
+          "kind": "class",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/ecuador/kotlin/com/kmp/host/di/HostModule.kt",
+      "language": "kotlin",
+      "lines": 23,
+      "imports": [
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.host.navigation.NavigationFeaturesRouterImpl",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.Dispatchers",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "HostModule",
+          "kind": "class",
+          "line": 15
+        },
+        {
+          "name": "ioDispatcher",
+          "kind": "fun",
+          "line": 18,
+          "container": "HostModule"
+        },
+        {
+          "name": "provideNavigationRouter",
+          "kind": "fun",
+          "line": 21,
+          "container": "HostModule"
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/ecuador/kotlin/com/kmp/host/di/KoinInitializer.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "org.koin.dsl.KoinAppDeclaration",
+        "org.koin.plugin.module.dsl.startKoin"
+      ],
+      "symbols": [
+        {
+          "name": "initKoin",
+          "kind": "fun",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/ecuador/kotlin/com/kmp/host/navigation/NavigationRouterImpl.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "cafe.adriel.voyager.core.screen.Screen",
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.feature.login.featureUi.presentation.navigation.LoginScreenInstance",
+        "com.kmp.feature.splash.featureUi.presentation.navigation.SplashScreenInstance",
+        "com.kmp.feature.welcome.featureUi.presentation.navigation.WelcomeScreenInstance"
+      ],
+      "symbols": [
+        {
+          "name": "NavigationFeaturesRouterImpl",
+          "kind": "class",
+          "line": 9
+        },
+        {
+          "name": "getScreenAfterSplash",
+          "kind": "fun",
+          "line": 11,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getSplashScreen",
+          "kind": "fun",
+          "line": 13,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getWelcomeScreen",
+          "kind": "fun",
+          "line": 14,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getLoginScreen",
+          "kind": "fun",
+          "line": 15,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/main/kotlin/com/kmp/host/MainActivity.kt",
+      "language": "kotlin",
+      "lines": 25,
+      "imports": [
+        "androidx.activity.compose.setContent",
+        "androidx.activity.enableEdgeToEdge",
+        "com.kmp.feature.splash.featureUi.presentation.controller.NavigationController",
+        "io.kmpbits.splash.SplashActivity"
+      ],
+      "symbols": [
+        {
+          "name": "MainActivity",
+          "kind": "class",
+          "line": 12
+        },
+        {
+          "name": "onPreCreate",
+          "kind": "fun",
+          "line": 14,
+          "container": "MainActivity",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "isReady",
+          "kind": "fun",
+          "line": 18,
+          "container": "MainActivity",
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "onFinished",
+          "kind": "fun",
+          "line": 20,
+          "container": "MainActivity",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "androidApp/src/main/kotlin/com/kmp/host/base/AppDelegate.kt",
+      "language": "kotlin",
+      "lines": 35,
+      "imports": [
+        "android.app.Application",
+        "com.kmp.host.BuildConfig",
+        "com.kmp.host.di.initKoin",
+        "com.kommon.versions.initializeAndroidFlavor",
+        "com.kommon.versions.initializeAndroidBuildType",
+        "io.github.aakira.napier.DebugAntilog",
+        "io.github.aakira.napier.Napier",
+        "org.koin.android.ext.koin.androidContext",
+        "org.koin.android.ext.koin.androidLogger",
+        "org.koin.core.logger.Level"
+      ],
+      "symbols": [
+        {
+          "name": "AppDelegate",
+          "kind": "class",
+          "line": 18
+        },
+        {
+          "name": "onCreate",
+          "kind": "fun",
+          "line": 20,
+          "container": "AppDelegate",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/KommonVersionExtension.kt",
+      "language": "kotlin",
+      "lines": 91,
+      "imports": [
+        "org.gradle.api.Plugin",
+        "org.gradle.api.Project",
+        "plugins.kommonsVersions.templates.commonGeneratedTemplate",
+        "plugins.kommonsVersions.templates.getAndroidGeneratedTemplate",
+        "plugins.kommonsVersions.templates.iosGeneratedTemplate",
+        "plugins.kommonsVersions.extensions.registerIosTask",
+        "plugins.kommonsVersions.tasks.GenerateKommonVersionsTask"
+      ],
+      "symbols": [
+        {
+          "name": "KommonVersionExtension",
+          "kind": "class",
+          "line": 26
+        },
+        {
+          "name": "apply",
+          "kind": "fun",
+          "line": 27,
+          "container": "KommonVersionExtension",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/KommonVersionsExtensions.kt",
+      "language": "kotlin",
+      "lines": 30,
+      "imports": [
+        "org.gradle.api.Project",
+        "org.gradle.api.model.ObjectFactory",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.tasks.Internal",
+        "plugins.kommonsVersions.model.AndroidConfig",
+        "plugins.kommonsVersions.model.IosConfig",
+        "javax.inject.Inject"
+      ],
+      "symbols": [
+        {
+          "name": "KommonVersionsExtension",
+          "kind": "class",
+          "line": 18,
+          "modifiers": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/extensions/ConfigureAndroidApplication.kt",
+      "language": "kotlin",
+      "lines": 69,
+      "imports": [
+        "com.android.build.api.dsl.ApplicationExtension",
+        "com.android.build.api.dsl.KotlinMultiplatformAndroidLibraryExtension",
+        "org.gradle.api.Project",
+        "org.gradle.api.plugins.ExtensionAware",
+        "org.gradle.kotlin.dsl.configure",
+        "org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension",
+        "plugins.kommonsVersions.model.AndroidConfig"
+      ],
+      "symbols": [
+        {
+          "name": "configureAndroidImmediately",
+          "kind": "fun",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/extensions/ConfigureIosTask.kt",
+      "language": "kotlin",
+      "lines": 100,
+      "imports": [
+        "org.gradle.api.Project",
+        "plugins.kommonsVersions.EXT_NAME",
+        "plugins.kommonsVersions.model.IosBuildTypes",
+        "plugins.kommonsVersions.model.IosConfig",
+        "plugins.kommonsVersions.tasks.GenerateIosConfigTask"
+      ],
+      "symbols": [
+        {
+          "name": "registerIosTask",
+          "kind": "fun",
+          "line": 13,
+          "modifiers": [
+            "internal"
+          ]
+        },
+        {
+          "name": "getIosConfigContent",
+          "kind": "fun",
+          "line": 80,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/extensions/GenerateFile.kt",
+      "language": "kotlin",
+      "lines": 44,
+      "imports": [
+        "org.gradle.api.Task",
+        "java.io.File"
+      ],
+      "symbols": [
+        {
+          "name": "generateFile",
+          "kind": "fun",
+          "line": 11,
+          "modifiers": [
+            "internal"
+          ]
+        },
+        {
+          "name": "writeGeneratedFile",
+          "kind": "fun",
+          "line": 34,
+          "modifiers": [
+            "internal"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/model/AndroidConfig.kt",
+      "language": "kotlin",
+      "lines": 101,
+      "imports": [
+        "plugins.kommonsVersions.KommonVersionsExtension",
+        "plugins.kommonsVersions.extensions.configureAndroidImmediately"
+      ],
+      "symbols": [
+        {
+          "name": "AndroidConfig",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "BuildConfigFieldConfig",
+          "kind": "class",
+          "line": 19,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "FlavorConfig",
+          "kind": "class",
+          "line": 25,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "AndroidConfigBuilder",
+          "kind": "class",
+          "line": 35
+        },
+        {
+          "name": "flavor",
+          "kind": "fun",
+          "line": 43,
+          "container": "AndroidConfigBuilder"
+        },
+        {
+          "name": "FlavorConfigBuilder",
+          "kind": "class",
+          "line": 60
+        },
+        {
+          "name": "buildConfigField",
+          "kind": "fun",
+          "line": 70,
+          "container": "FlavorConfigBuilder"
+        },
+        {
+          "name": "android",
+          "kind": "fun",
+          "line": 83
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/model/IosBuildTypes.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "IosBuildTypes",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "enum"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/model/IosConfig.kt",
+      "language": "kotlin",
+      "lines": 67,
+      "imports": [
+        "plugins.kommonsVersions.KommonVersionsExtension"
+      ],
+      "symbols": [
+        {
+          "name": "IosSchemaConfig",
+          "kind": "class",
+          "line": 9,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "IosSchemaBuilder",
+          "kind": "class",
+          "line": 15
+        },
+        {
+          "name": "schema",
+          "kind": "fun",
+          "line": 21
+        },
+        {
+          "name": "IosConfig",
+          "kind": "class",
+          "line": 32,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "IosConfigBuilder",
+          "kind": "class",
+          "line": 42
+        },
+        {
+          "name": "ios",
+          "kind": "fun",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/tasks/GenerateIosConfigTask.kt",
+      "language": "kotlin",
+      "lines": 43,
+      "imports": [
+        "org.gradle.api.DefaultTask",
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.provider.MapProperty",
+        "org.gradle.api.tasks.CacheableTask",
+        "org.gradle.api.tasks.Input",
+        "org.gradle.api.tasks.OutputDirectory",
+        "org.gradle.api.tasks.TaskAction"
+      ],
+      "symbols": [
+        {
+          "name": "GenerateIosConfigTask",
+          "kind": "class",
+          "line": 12,
+          "modifiers": [
+            "abstract"
+          ]
+        },
+        {
+          "name": "generate",
+          "kind": "fun",
+          "line": 21,
+          "container": "GenerateIosConfigTask"
+        },
+        {
+          "name": "readTextOrNull",
+          "kind": "fun",
+          "line": 41,
+          "container": "GenerateIosConfigTask",
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/tasks/GenerateKommonVersionsTask.kt",
+      "language": "kotlin",
+      "lines": 70,
+      "imports": [
+        "org.gradle.api.DefaultTask",
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.tasks.CacheableTask",
+        "org.gradle.api.tasks.Input",
+        "org.gradle.api.tasks.Optional",
+        "org.gradle.api.tasks.OutputDirectory",
+        "org.gradle.api.tasks.TaskAction",
+        "plugins.kommonsVersions.extensions.writeGeneratedFile"
+      ],
+      "symbols": [
+        {
+          "name": "GenerateKommonVersionsTask",
+          "kind": "class",
+          "line": 24,
+          "modifiers": [
+            "abstract"
+          ]
+        },
+        {
+          "name": "generate",
+          "kind": "fun",
+          "line": 45,
+          "container": "GenerateKommonVersionsTask"
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/templates/AndroidGeneratedTemplate.kt",
+      "language": "kotlin",
+      "lines": 44,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "getAndroidGeneratedTemplate",
+          "kind": "fun",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/templates/CommonGeneratedTemplate.kt",
+      "language": "kotlin",
+      "lines": 20,
+      "imports": [],
+      "symbols": []
+    },
+    {
+      "path": "build-logic/convention/src/main/kotlin/plugins/kommonsVersions/templates/IosGeneratedTemplate.kt",
+      "language": "kotlin",
+      "lines": 56,
+      "imports": [],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/database/src/androidMain/kotlin/com/kmp/core/database/AppDatabase.android.kt",
+      "language": "kotlin",
+      "lines": 19,
+      "imports": [
+        "android.content.Context",
+        "androidx.room3.Room",
+        "androidx.room3.RoomDatabase",
+        "org.koin.mp.KoinPlatform.getKoin"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/AppDatabase.kt",
+      "language": "kotlin",
+      "lines": 34,
+      "imports": [
+        "androidx.room3.ConstructedBy",
+        "androidx.room3.Database",
+        "androidx.room3.RoomDatabase",
+        "com.kmp.core.database.dao.packages.PackagesDao",
+        "com.kmp.core.database.dao.users.UsersDao",
+        "com.kmp.core.model.entity.packages.PackagesEntity",
+        "com.kmp.core.model.entity.user.UserEntity"
+      ],
+      "symbols": [
+        {
+          "name": "AppDatabase",
+          "kind": "class",
+          "line": 24,
+          "modifiers": [
+            "abstract"
+          ]
+        },
+        {
+          "name": "userDao",
+          "kind": "fun",
+          "line": 26,
+          "container": "AppDatabase",
+          "modifiers": [
+            "abstract"
+          ]
+        },
+        {
+          "name": "packagesDao",
+          "kind": "fun",
+          "line": 27,
+          "container": "AppDatabase",
+          "modifiers": [
+            "abstract"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/AppDatabaseConstructor.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "androidx.room3.RoomDatabaseConstructor"
+      ],
+      "symbols": [
+        {
+          "name": "initialize",
+          "kind": "fun",
+          "line": 11,
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/dao/packages/PackagesDao.kt",
+      "language": "kotlin",
+      "lines": 31,
+      "imports": [
+        "androidx.room3.Dao",
+        "androidx.room3.Insert",
+        "androidx.room3.OnConflictStrategy",
+        "androidx.room3.Query",
+        "androidx.room3.Transaction",
+        "com.kmp.core.model.entity.packages.PackagesEntity"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesDao",
+          "kind": "interface",
+          "line": 15
+        },
+        {
+          "name": "insertPackages",
+          "kind": "fun",
+          "line": 18,
+          "container": "PackagesDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getAllPackages",
+          "kind": "fun",
+          "line": 21,
+          "container": "PackagesDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteAllPackages",
+          "kind": "fun",
+          "line": 24,
+          "container": "PackagesDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "refreshPackages",
+          "kind": "fun",
+          "line": 27,
+          "container": "PackagesDao",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/dao/users/UsersDao.kt",
+      "language": "kotlin",
+      "lines": 35,
+      "imports": [
+        "androidx.room3.Dao",
+        "androidx.room3.Delete",
+        "androidx.room3.Insert",
+        "androidx.room3.OnConflictStrategy",
+        "androidx.room3.Query",
+        "androidx.room3.Transaction",
+        "com.kmp.core.model.entity.user.UserEntity"
+      ],
+      "symbols": [
+        {
+          "name": "UsersDao",
+          "kind": "interface",
+          "line": 16
+        },
+        {
+          "name": "clearAndInsertUser",
+          "kind": "fun",
+          "line": 19,
+          "container": "UsersDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "insertUser",
+          "kind": "fun",
+          "line": 25,
+          "container": "UsersDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getFirstUser",
+          "kind": "fun",
+          "line": 28,
+          "container": "UsersDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "kind": "fun",
+          "line": 31,
+          "container": "UsersDao",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteAllUsers",
+          "kind": "fun",
+          "line": 34,
+          "container": "UsersDao",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/datasource/packages/PackagesDataBaseDataSource.kt",
+      "language": "kotlin",
+      "lines": 14,
+      "imports": [
+        "com.kmp.core.model.entity.packages.PackagesEntity"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesDataBaseDataSource",
+          "kind": "interface",
+          "line": 9
+        },
+        {
+          "name": "insertPackages",
+          "kind": "fun",
+          "line": 11,
+          "container": "PackagesDataBaseDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getAllPackages",
+          "kind": "fun",
+          "line": 12,
+          "container": "PackagesDataBaseDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteAllPackages",
+          "kind": "fun",
+          "line": 13,
+          "container": "PackagesDataBaseDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/datasource/packages/PackagesDataBaseDataSourceImpl.kt",
+      "language": "kotlin",
+      "lines": 26,
+      "imports": [
+        "com.kmp.core.database.dao.packages.PackagesDao",
+        "com.kmp.core.model.entity.packages.PackagesEntity",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesDataBaseDataSourceImpl",
+          "kind": "class",
+          "line": 12
+        },
+        {
+          "name": "insertPackages",
+          "kind": "fun",
+          "line": 17,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "getAllPackages",
+          "kind": "fun",
+          "line": 20,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteAllPackages",
+          "kind": "fun",
+          "line": 23,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/datasource/user/UserDataBaseDataSource.kt",
+      "language": "kotlin",
+      "lines": 13,
+      "imports": [
+        "com.kmp.core.model.entity.user.UserEntity"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataBaseDataSource",
+          "kind": "interface",
+          "line": 9
+        },
+        {
+          "name": "clearAndInsertUser",
+          "kind": "fun",
+          "line": 10,
+          "container": "UserDataBaseDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getFirstUser",
+          "kind": "fun",
+          "line": 11,
+          "container": "UserDataBaseDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "kind": "fun",
+          "line": 12,
+          "container": "UserDataBaseDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/datasource/user/UserDataBaseDataSourceImpl.kt",
+      "language": "kotlin",
+      "lines": 25,
+      "imports": [
+        "com.kmp.core.database.dao.users.UsersDao",
+        "com.kmp.core.model.entity.user.UserEntity",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataBaseDataSourceImpl",
+          "kind": "class",
+          "line": 12
+        },
+        {
+          "name": "clearAndInsertUser",
+          "kind": "fun",
+          "line": 17,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "getFirstUser",
+          "kind": "fun",
+          "line": 20,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "kind": "fun",
+          "line": 23,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/di/DataBaseModule.kt",
+      "language": "kotlin",
+      "lines": 31,
+      "imports": [
+        "com.kmp.core.database.AppDatabase",
+        "com.kmp.core.database.getDatabaseBuilder",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.IO",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "CoreDataBaseModule",
+          "kind": "class",
+          "line": 19
+        },
+        {
+          "name": "appDatabase",
+          "kind": "fun",
+          "line": 22,
+          "container": "CoreDataBaseModule"
+        },
+        {
+          "name": "userDao",
+          "kind": "fun",
+          "line": 27,
+          "container": "CoreDataBaseModule"
+        },
+        {
+          "name": "packagesDao",
+          "kind": "fun",
+          "line": 30,
+          "container": "CoreDataBaseModule"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/repository/user/UserDataBaseRepository.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "com.kmp.core.model.models.user.UserModel",
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataBaseRepository",
+          "kind": "interface",
+          "line": 6
+        },
+        {
+          "name": "clearAndInsertUser",
+          "kind": "fun",
+          "line": 8,
+          "container": "UserDataBaseRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getFirstUser",
+          "kind": "fun",
+          "line": 9,
+          "container": "UserDataBaseRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "kind": "fun",
+          "line": 10,
+          "container": "UserDataBaseRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/repository/user/UserDataBaseRepositoryImpl.kt",
+      "language": "kotlin",
+      "lines": 30,
+      "imports": [
+        "com.kmp.core.database.datasource.user.UserDataBaseDataSource",
+        "com.kmp.core.model.mappers.user.toDomain",
+        "com.kmp.core.model.mappers.user.toEntity",
+        "com.kmp.core.model.models.user.UserModel",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.flow",
+        "kotlinx.coroutines.flow.flowOn",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataBaseRepositoryImpl",
+          "kind": "class",
+          "line": 14
+        },
+        {
+          "name": "clearAndInsertUser",
+          "kind": "fun",
+          "line": 19,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "getFirstUser",
+          "kind": "fun",
+          "line": 23,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "kind": "fun",
+          "line": 27,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/commonMain/kotlin/com/kmp/core/database/usecase/user/UserDataBaseUseCase.kt",
+      "language": "kotlin",
+      "lines": 25,
+      "imports": [
+        "com.kmp.core.database.repository.user.UserDataBaseRepository",
+        "com.kmp.core.model.models.user.UserModel",
+        "kotlinx.coroutines.flow.Flow",
+        "org.koin.core.annotation.Factory"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataBaseUseCase",
+          "kind": "class",
+          "line": 9
+        },
+        {
+          "name": "clearAndInsertUser",
+          "kind": "fun",
+          "line": 13,
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getFirstUser",
+          "kind": "fun",
+          "line": 22,
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "deleteUser",
+          "kind": "fun",
+          "line": 24,
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/database/src/iosMain/kotlin/com/kmp/core/database/AppDatabase.ios.kt",
+      "language": "kotlin",
+      "lines": 29,
+      "imports": [
+        "androidx.room.Room",
+        "androidx.room.RoomDatabase",
+        "kotlinx.cinterop.ExperimentalForeignApi",
+        "platform.Foundation.NSApplicationSupportDirectory",
+        "platform.Foundation.NSFileManager",
+        "platform.Foundation.NSUserDomainMask"
+      ],
+      "symbols": [
+        {
+          "name": "applicationSupportDirectory",
+          "kind": "fun",
+          "line": 20,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/androidMain/kotlin/com/kmp/core/datastore/AppDataStore.android.kt",
+      "language": "kotlin",
+      "lines": 21,
+      "imports": [
+        "android.content.Context",
+        "androidx.datastore.core.DataStore",
+        "androidx.datastore.preferences.core.PreferenceDataStoreFactory",
+        "androidx.datastore.preferences.core.Preferences",
+        "com.kmp.core.utils.datastore.DS",
+        "okio.Path.Companion.toPath",
+        "org.koin.mp.KoinPlatform.getKoin"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/AppDataStore.kt",
+      "language": "kotlin",
+      "lines": 42,
+      "imports": [
+        "androidx.datastore.core.DataStore",
+        "androidx.datastore.preferences.core.Preferences",
+        "androidx.datastore.preferences.core.edit",
+        "androidx.datastore.preferences.core.emptyPreferences",
+        "com.kmp.core.utils.datastore.DS",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.catch",
+        "kotlinx.coroutines.flow.map",
+        "kotlinx.io.IOException",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "AppDataStore",
+          "kind": "class",
+          "line": 19
+        },
+        {
+          "name": "saveToken",
+          "kind": "fun",
+          "line": 33,
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 37,
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/datasource/user/UserDataStoreSource.kt",
+      "language": "kotlin",
+      "lines": 14,
+      "imports": [
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataStoreSource",
+          "kind": "interface",
+          "line": 9
+        },
+        {
+          "name": "getUserToken",
+          "kind": "fun",
+          "line": 10,
+          "container": "UserDataStoreSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 11,
+          "container": "UserDataStoreSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 12,
+          "container": "UserDataStoreSource",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 13,
+          "container": "UserDataStoreSource",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/datasource/user/UserDataStoreSourceImpl.kt",
+      "language": "kotlin",
+      "lines": 27,
+      "imports": [
+        "com.kmp.core.datastore.AppDataStore",
+        "kotlinx.coroutines.flow.Flow",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataStoreSourceImpl",
+          "kind": "class",
+          "line": 12
+        },
+        {
+          "name": "getUserToken",
+          "kind": "fun",
+          "line": 16,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 19,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 22,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 25,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/di/DataStoreModule.kt",
+      "language": "kotlin",
+      "lines": 21,
+      "imports": [
+        "com.kmp.core.datastore.createDataStore",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "CoreDataStoreModule",
+          "kind": "class",
+          "line": 16
+        },
+        {
+          "name": "dataStore",
+          "kind": "fun",
+          "line": 19,
+          "container": "CoreDataStoreModule"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/repository/user/UserDataStoreRepository.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataStoreRepository",
+          "kind": "interface",
+          "line": 5
+        },
+        {
+          "name": "getUserToken",
+          "kind": "fun",
+          "line": 7,
+          "container": "UserDataStoreRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 8,
+          "container": "UserDataStoreRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 9,
+          "container": "UserDataStoreRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 10,
+          "container": "UserDataStoreRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/repository/user/UserDataStoreRepositoryImpl.kt",
+      "language": "kotlin",
+      "lines": 30,
+      "imports": [
+        "com.kmp.core.datastore.datasource.user.UserDataStoreSource",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.flow",
+        "kotlinx.coroutines.flow.flowOn",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataStoreRepositoryImpl",
+          "kind": "class",
+          "line": 11
+        },
+        {
+          "name": "getUserToken",
+          "kind": "fun",
+          "line": 16,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 19,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 22,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 26,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/commonMain/kotlin/com/kmp/core/datastore/usecase/user/UserDataStoreUseCase.kt",
+      "language": "kotlin",
+      "lines": 23,
+      "imports": [
+        "com.kmp.core.datastore.repository.user.UserDataStoreRepository",
+        "kotlinx.coroutines.flow.Flow",
+        "org.koin.core.annotation.Factory"
+      ],
+      "symbols": [
+        {
+          "name": "UserDataStoreUseCase",
+          "kind": "class",
+          "line": 8
+        },
+        {
+          "name": "getUserToken",
+          "kind": "fun",
+          "line": 12,
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 15,
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 18,
+          "modifiers": [
+            "suspend"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 21,
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/datastore/src/iosMain/kotlin/com/kmp/core/datastore/AppDataStore.ios.kt",
+      "language": "kotlin",
+      "lines": 31,
+      "imports": [
+        "androidx.datastore.core.DataStore",
+        "androidx.datastore.preferences.core.PreferenceDataStoreFactory",
+        "androidx.datastore.preferences.core.Preferences",
+        "com.kmp.core.utils.datastore.DS",
+        "kotlinx.cinterop.ExperimentalForeignApi",
+        "okio.Path.Companion.toPath",
+        "platform.Foundation.NSApplicationSupportDirectory",
+        "platform.Foundation.NSFileManager",
+        "platform.Foundation.NSUserDomainMask"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/design/src/androidHostTest/kotlin/ArkivePlaceholder.kt",
+      "language": "kotlin",
+      "lines": 7,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "ArkivePlaceholder",
+          "kind": "class",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/androidMain/kotlin/com/kmp/core/design/theme/Theme.android.kt",
+      "language": "kotlin",
+      "lines": 29,
+      "imports": [
+        "android.app.Activity",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "androidx.compose.ui.graphics.toArgb",
+        "androidx.compose.ui.platform.LocalView",
+        "androidx.core.view.WindowInsetsControllerCompat"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/button/Button.kt",
+      "language": "kotlin",
+      "lines": 236,
+      "imports": [
+        "androidx.compose.foundation.BorderStroke",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.clickable",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.foundation.shape.CircleShape",
+        "androidx.compose.foundation.shape.RoundedCornerShape",
+        "androidx.compose.material3.Button",
+        "androidx.compose.material3.ButtonDefaults",
+        "androidx.compose.material3.ElevatedButton",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.minimumInteractiveComponentSize",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.draw.clip",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.graphics.Shape",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.Dp",
+        "com.infinum.arkive.annotations.ArkiveComposable",
+        "com.kmp.core.design.component.text.TextNormalBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.ic_example",
+        "com.kmp.core.design.generated.resources.ic_eye",
+        "com.kmp.core.design.generated.resources.ic_test_1",
+        "com.kmp.core.design.generated.resources.ic_test_2",
+        "com.kmp.core.design.generated.resources.outlined_button",
+        "com.kmp.core.design.generated.resources.primary_button",
+        "com.kmp.core.design.generated.resources.primary_button_elevated",
+        "org.jetbrains.compose.resources.DrawableResource",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "ButtonPrimary",
+          "kind": "fun",
+          "line": 46
+        },
+        {
+          "name": "ButtonPrimaryElevated",
+          "kind": "fun",
+          "line": 74
+        },
+        {
+          "name": "ButtonOutlined",
+          "kind": "fun",
+          "line": 105
+        },
+        {
+          "name": "CircularIconButton",
+          "kind": "fun",
+          "line": 139
+        },
+        {
+          "name": "PreviewButtonPrimary",
+          "kind": "fun",
+          "line": 173
+        },
+        {
+          "name": "PreviewButtonPrimaryElevated",
+          "kind": "fun",
+          "line": 191
+        },
+        {
+          "name": "PreviewButtonOutlined",
+          "kind": "fun",
+          "line": 209
+        },
+        {
+          "name": "PreviewCircularIconButton",
+          "kind": "fun",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/card/Card.kt",
+      "language": "kotlin",
+      "lines": 191,
+      "imports": [
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.Card",
+        "androidx.compose.material3.CardDefaults",
+        "androidx.compose.material3.ElevatedCard",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.OutlinedCard",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.infinum.arkive.annotations.ArkiveComposable",
+        "com.kmp.core.design.component.text.TextNormalBold",
+        "com.kmp.core.design.component.text.TextSmall",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.example",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "SimpleCard",
+          "kind": "fun",
+          "line": 31
+        },
+        {
+          "name": "ElevateCard",
+          "kind": "fun",
+          "line": 62
+        },
+        {
+          "name": "OutlineCard",
+          "kind": "fun",
+          "line": 94
+        },
+        {
+          "name": "SimpleCardCustomPreview",
+          "kind": "fun",
+          "line": 134
+        },
+        {
+          "name": "ElevateCardCustomPreview",
+          "kind": "fun",
+          "line": 157
+        },
+        {
+          "name": "OutlinedCardCustomPreview",
+          "kind": "fun",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/container/Container.kt",
+      "language": "kotlin",
+      "lines": 70,
+      "imports": [
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.BoxScope",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.navigationBarsPadding",
+        "androidx.compose.foundation.layout.statusBarsPadding",
+        "androidx.compose.material3.Surface",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.design.theme.SystemAppearance"
+      ],
+      "symbols": [
+        {
+          "name": "SafeScreenContainer",
+          "kind": "fun",
+          "line": 21
+        },
+        {
+          "name": "SafeScreenContainerTest",
+          "kind": "fun",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/dialog/Dialog.kt",
+      "language": "kotlin",
+      "lines": 170,
+      "imports": [
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.material3.AlertDialog",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.text.style.TextAlign",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.infinum.arkive.annotations.ArkiveComposable",
+        "com.kmp.core.design.component.button.ButtonPrimary",
+        "com.kmp.core.design.component.text.TextNormalBold",
+        "com.kmp.core.design.component.text.TextSmall",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.accept",
+        "com.kmp.core.design.generated.resources.cancel",
+        "com.kmp.core.design.generated.resources.sub_tittle",
+        "com.kmp.core.design.generated.resources.tittle",
+        "com.kmp.core.model.ui.dialog.DialogUiModel",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "InfoDialog",
+          "kind": "fun",
+          "line": 29
+        },
+        {
+          "name": "ErrorDialog",
+          "kind": "fun",
+          "line": 82
+        },
+        {
+          "name": "DialogPreview",
+          "kind": "fun",
+          "line": 125
+        },
+        {
+          "name": "ErrorDialogPreview",
+          "kind": "fun",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/field/TextField.kt",
+      "language": "kotlin",
+      "lines": 249,
+      "imports": [
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.text.KeyboardActions",
+        "androidx.compose.foundation.text.KeyboardOptions",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.IconButton",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.OutlinedTextField",
+        "androidx.compose.material3.TextFieldDefaults",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.saveable.rememberSaveable",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.text.TextStyle",
+        "androidx.compose.ui.text.font.FontWeight",
+        "androidx.compose.ui.text.input.ImeAction",
+        "androidx.compose.ui.text.input.KeyboardCapitalization",
+        "androidx.compose.ui.text.input.KeyboardType",
+        "androidx.compose.ui.text.input.PasswordVisualTransformation",
+        "androidx.compose.ui.text.input.VisualTransformation",
+        "androidx.compose.ui.text.style.TextAlign",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.TextUnit",
+        "com.infinum.arkive.annotations.ArkiveComposable",
+        "com.kmp.core.design.component.image.ImageCircular",
+        "com.kmp.core.design.component.text.TextMedium",
+        "com.kmp.core.design.component.text.TextMediumBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.example",
+        "com.kmp.core.design.generated.resources.ic_example",
+        "com.kmp.core.design.generated.resources.ic_eye",
+        "com.kmp.core.design.generated.resources.ic_eye_slash",
+        "com.kmp.core.design.generated.resources.ic_test_1",
+        "org.jetbrains.compose.resources.DrawableResource",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "TextFieldSimple",
+          "kind": "fun",
+          "line": 53
+        },
+        {
+          "name": "TextFieldPassword",
+          "kind": "fun",
+          "line": 118
+        },
+        {
+          "name": "TextFieldSimplePreview",
+          "kind": "fun",
+          "line": 205
+        },
+        {
+          "name": "TextFieldPasswordPreview",
+          "kind": "fun",
+          "line": 231
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/image/Image.kt",
+      "language": "kotlin",
+      "lines": 242,
+      "imports": [
+        "androidx.compose.foundation.Image",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.foundation.shape.CircleShape",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.draw.clip",
+        "androidx.compose.ui.graphics.painter.Painter",
+        "androidx.compose.ui.layout.ContentScale",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.Dp",
+        "coil3.compose.AsyncImage",
+        "com.infinum.arkive.annotations.ArkiveComposable",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.ic_test_1",
+        "com.kmp.core.design.generated.resources.ic_test_2",
+        "org.jetbrains.compose.resources.DrawableResource",
+        "org.jetbrains.compose.resources.painterResource"
+      ],
+      "symbols": [
+        {
+          "name": "Image",
+          "kind": "fun",
+          "line": 29
+        },
+        {
+          "name": "Image",
+          "kind": "fun",
+          "line": 43
+        },
+        {
+          "name": "ImageCircular",
+          "kind": "fun",
+          "line": 57
+        },
+        {
+          "name": "ImageCircular",
+          "kind": "fun",
+          "line": 72
+        },
+        {
+          "name": "ImageAsync",
+          "kind": "fun",
+          "line": 87
+        },
+        {
+          "name": "ImageAsync",
+          "kind": "fun",
+          "line": 104
+        },
+        {
+          "name": "ImageCircularAsync",
+          "kind": "fun",
+          "line": 121
+        },
+        {
+          "name": "ImageCircularAsync",
+          "kind": "fun",
+          "line": 140
+        },
+        {
+          "name": "ImagePreview",
+          "kind": "fun",
+          "line": 168
+        },
+        {
+          "name": "ImageCircularPreview",
+          "kind": "fun",
+          "line": 189
+        },
+        {
+          "name": "ImageAsyncPreview",
+          "kind": "fun",
+          "line": 210
+        },
+        {
+          "name": "ImageCircularAsyncPreview",
+          "kind": "fun",
+          "line": 232
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/loader/Loader.kt",
+      "language": "kotlin",
+      "lines": 53,
+      "imports": [
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.CircularProgressIndicator",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.enums.StatusLoading"
+      ],
+      "symbols": [
+        {
+          "name": "Loader",
+          "kind": "fun",
+          "line": 23
+        },
+        {
+          "name": "LoadingPreview",
+          "kind": "fun",
+          "line": 44,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/navigationbar/ClaroBottomNavigationWithIndicator.kt",
+      "language": "kotlin",
+      "lines": 147,
+      "imports": [
+        "androidx.compose.animation.core.animateDpAsState",
+        "androidx.compose.animation.core.tween",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.clickable",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.offset",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.foundation.shape.RoundedCornerShape",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.Surface",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableIntStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.layout.onGloballyPositioned",
+        "androidx.compose.ui.platform.LocalDensity",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.kmp.core.design.component.text.TextSmallExtraBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.utils.animation.Animation",
+        "org.jetbrains.compose.resources.DrawableResource",
+        "org.jetbrains.compose.resources.painterResource"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroBottomNavigationWithIndicator",
+          "kind": "fun",
+          "line": 43
+        },
+        {
+          "name": "ClaroBottomNavigationPreview",
+          "kind": "fun",
+          "line": 133,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/pull_to_refresh/PullToRefresh.kt",
+      "language": "kotlin",
+      "lines": 51,
+      "imports": [
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.BoxScope",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.pulltorefresh.PullToRefreshBox",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.enums.StatusLoading"
+      ],
+      "symbols": [
+        {
+          "name": "PullToRefresh",
+          "kind": "fun",
+          "line": 20
+        },
+        {
+          "name": "getStatusLoading",
+          "kind": "fun",
+          "line": 35,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "PullToRefreshPreview",
+          "kind": "fun",
+          "line": 42,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/text/Text.kt",
+      "language": "kotlin",
+      "lines": 520,
+      "imports": [
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.text.LinkAnnotation",
+        "androidx.compose.ui.text.SpanStyle",
+        "androidx.compose.ui.text.buildAnnotatedString",
+        "androidx.compose.ui.text.font.FontWeight",
+        "androidx.compose.ui.text.style.TextAlign",
+        "androidx.compose.ui.text.withLink",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.TextUnit",
+        "com.infinum.arkive.annotations.ArkiveComposable",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.example",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "TextSmallExtra",
+          "kind": "fun",
+          "line": 48
+        },
+        {
+          "name": "TextSmallExtraBold",
+          "kind": "fun",
+          "line": 68
+        },
+        {
+          "name": "TextSmall",
+          "kind": "fun",
+          "line": 88
+        },
+        {
+          "name": "TextSmallBold",
+          "kind": "fun",
+          "line": 108
+        },
+        {
+          "name": "TextNormal",
+          "kind": "fun",
+          "line": 128
+        },
+        {
+          "name": "TextNormalBold",
+          "kind": "fun",
+          "line": 148
+        },
+        {
+          "name": "TextMedium",
+          "kind": "fun",
+          "line": 168
+        },
+        {
+          "name": "TextMediumBold",
+          "kind": "fun",
+          "line": 188
+        },
+        {
+          "name": "TextBig",
+          "kind": "fun",
+          "line": 208
+        },
+        {
+          "name": "TextBigBold",
+          "kind": "fun",
+          "line": 228
+        },
+        {
+          "name": "TextUrlLink",
+          "kind": "fun",
+          "line": 248
+        },
+        {
+          "name": "TextSmallExtraPreview",
+          "kind": "fun",
+          "line": 298
+        },
+        {
+          "name": "TextSmallExtraBoldPreview",
+          "kind": "fun",
+          "line": 319
+        },
+        {
+          "name": "TextSmallPreview",
+          "kind": "fun",
+          "line": 340
+        },
+        {
+          "name": "TextSmallBoldPreview",
+          "kind": "fun",
+          "line": 361
+        },
+        {
+          "name": "TextNormalPreview",
+          "kind": "fun",
+          "line": 382
+        },
+        {
+          "name": "TextNormalBoldPreview",
+          "kind": "fun",
+          "line": 403
+        },
+        {
+          "name": "TextMediumPreview",
+          "kind": "fun",
+          "line": 424
+        },
+        {
+          "name": "TextMediumBoldPreview",
+          "kind": "fun",
+          "line": 445
+        },
+        {
+          "name": "TextBigPreview",
+          "kind": "fun",
+          "line": 466
+        },
+        {
+          "name": "TextBigBoldPreview",
+          "kind": "fun",
+          "line": 487
+        },
+        {
+          "name": "TextUrlLinkPreview",
+          "kind": "fun",
+          "line": 508
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/component/toolbar/Toolbar.kt",
+      "language": "kotlin",
+      "lines": 95,
+      "imports": [
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.IconButton",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.Dp",
+        "com.kmp.core.design.component.text.TextNormalBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.example",
+        "com.kmp.core.design.generated.resources.ic_example",
+        "org.jetbrains.compose.resources.DrawableResource",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "Toolbar",
+          "kind": "fun",
+          "line": 34
+        },
+        {
+          "name": "ToolbarPreview",
+          "kind": "fun",
+          "line": 80,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/dimen/Dimens.kt",
+      "language": "kotlin",
+      "lines": 117,
+      "imports": [
+        "androidx.compose.ui.unit.Dp",
+        "androidx.compose.ui.unit.TextUnit",
+        "androidx.compose.ui.unit.dp",
+        "androidx.compose.ui.unit.sp"
+      ],
+      "symbols": [
+        {
+          "name": "Dimens",
+          "kind": "object",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/enums/Operations.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "StatusLoading",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "enum"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/Theme.kt",
+      "language": "kotlin",
+      "lines": 59,
+      "imports": [
+        "androidx.compose.foundation.isSystemInDarkTheme",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.CompositionLocalProvider",
+        "androidx.compose.runtime.ReadOnlyComposable",
+        "androidx.compose.runtime.compositionLocalOf",
+        "androidx.compose.runtime.staticCompositionLocalOf",
+        "com.kmp.core.design.theme.colors.AppColors",
+        "com.kmp.core.design.theme.colors.darkModeAppColors",
+        "com.kmp.core.design.theme.colors.lightModeAppColors"
+      ],
+      "symbols": [
+        {
+          "name": "AppTheme",
+          "kind": "fun",
+          "line": 24
+        },
+        {
+          "name": "AppTheme",
+          "kind": "object",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/Type.kt",
+      "language": "kotlin",
+      "lines": 112,
+      "imports": [
+        "androidx.compose.material3.Typography",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.Immutable",
+        "androidx.compose.ui.text.SpanStyle",
+        "androidx.compose.ui.text.TextStyle",
+        "androidx.compose.ui.text.font.FontFamily",
+        "androidx.compose.ui.text.font.FontWeight",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.generated.resources.Res",
+        "com.kmp.core.design.generated.resources.open_sans",
+        "org.jetbrains.compose.resources.Font"
+      ],
+      "symbols": [
+        {
+          "name": "AppTypography",
+          "kind": "class",
+          "line": 91,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "AppSpanStyle",
+          "kind": "class",
+          "line": 107,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/colors/AppColors.kt",
+      "language": "kotlin",
+      "lines": 95,
+      "imports": [
+        "androidx.compose.material3.ColorScheme",
+        "androidx.compose.material3.darkColorScheme",
+        "androidx.compose.material3.lightColorScheme",
+        "androidx.compose.runtime.Immutable",
+        "androidx.compose.ui.graphics.Color",
+        "com.kmp.core.design.theme.colors.custom.ColorBackgrounds",
+        "com.kmp.core.design.theme.colors.custom.ColorStatus",
+        "com.kmp.core.design.theme.colors.custom.ColorTexts"
+      ],
+      "symbols": [
+        {
+          "name": "AppColors",
+          "kind": "class",
+          "line": 17,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "asMaterialColorScheme",
+          "kind": "fun",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/colors/ColorsDark.kt",
+      "language": "kotlin",
+      "lines": 76,
+      "imports": [
+        "androidx.compose.ui.graphics.Color",
+        "com.kmp.core.design.theme.colors.custom.ColorBackgrounds",
+        "com.kmp.core.design.theme.colors.custom.ColorStatus",
+        "com.kmp.core.design.theme.colors.custom.ColorTexts"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/colors/ColorsLight.kt",
+      "language": "kotlin",
+      "lines": 76,
+      "imports": [
+        "androidx.compose.ui.graphics.Color",
+        "com.kmp.core.design.theme.colors.custom.ColorBackgrounds",
+        "com.kmp.core.design.theme.colors.custom.ColorStatus",
+        "com.kmp.core.design.theme.colors.custom.ColorTexts"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/colors/custom/ColorBackgrounds.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "androidx.compose.runtime.Immutable",
+        "androidx.compose.ui.graphics.Color"
+      ],
+      "symbols": [
+        {
+          "name": "ColorBackgrounds",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/colors/custom/ColorStatus.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "androidx.compose.runtime.Immutable",
+        "androidx.compose.ui.graphics.Color"
+      ],
+      "symbols": [
+        {
+          "name": "ColorStatus",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/commonMain/kotlin/com/kmp/core/design/theme/colors/custom/ColorTexts.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [
+        "androidx.compose.runtime.Immutable",
+        "androidx.compose.ui.graphics.Color"
+      ],
+      "symbols": [
+        {
+          "name": "ColorTexts",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/design/src/iosMain/kotlin/com/kmp/core/design/theme/Theme.ios.kt",
+      "language": "kotlin",
+      "lines": 21,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "platform.UIKit.UIApplication",
+        "platform.UIKit.UIStatusBarStyleDarkContent",
+        "platform.UIKit.UIStatusBarStyleLightContent",
+        "platform.UIKit.setStatusBarStyle"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/entity/packages/PackagesEntity.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "androidx.room3.Entity",
+        "androidx.room3.PrimaryKey"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesEntity",
+          "kind": "class",
+          "line": 11,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/entity/user/UserEntity.kt",
+      "language": "kotlin",
+      "lines": 15,
+      "imports": [
+        "androidx.room3.Entity",
+        "androidx.room3.PrimaryKey"
+      ],
+      "symbols": [
+        {
+          "name": "UserEntity",
+          "kind": "class",
+          "line": 11,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/mappers/claro_contact/ClaroContactModel.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "ClaroContactModel",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/mappers/login/LoginMapper.kt",
+      "language": "kotlin",
+      "lines": 42,
+      "imports": [
+        "com.kmp.core.model.models.login.LoginCredentialsModel",
+        "com.kmp.core.model.models.login.LoginDataModel",
+        "com.kmp.core.model.models.login.LoginModel",
+        "com.kmp.core.model.models.login.LoginTokensModel",
+        "com.kmp.core.model.request.login.LoginCredentialsRequest",
+        "com.kmp.core.model.response.login.LoginDataResponse",
+        "com.kmp.core.model.response.login.LoginResponse",
+        "com.kmp.core.model.response.login.LoginTokensResponse",
+        "com.kmp.core.utils.network.enums.CodeServices"
+      ],
+      "symbols": [
+        {
+          "name": "toRequest",
+          "kind": "fun",
+          "line": 17
+        },
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 23
+        },
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 31
+        },
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/mappers/packages/PackagesMapper.kt",
+      "language": "kotlin",
+      "lines": 42,
+      "imports": [
+        "com.kmp.core.model.entity.packages.PackagesEntity",
+        "com.kmp.core.model.models.packages.PackagesDataModel",
+        "com.kmp.core.model.models.packages.PackagesModel",
+        "com.kmp.core.model.response.packages.PackagesDataResponse",
+        "com.kmp.core.model.response.packages.PackagesResponse"
+      ],
+      "symbols": [
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 13
+        },
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 20
+        },
+        {
+          "name": "toEntity",
+          "kind": "fun",
+          "line": 28
+        },
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/mappers/user/UserMapper.kt",
+      "language": "kotlin",
+      "lines": 22,
+      "imports": [
+        "com.kmp.core.model.entity.user.UserEntity",
+        "com.kmp.core.model.models.user.UserModel"
+      ],
+      "symbols": [
+        {
+          "name": "toDomain",
+          "kind": "fun",
+          "line": 10
+        },
+        {
+          "name": "toEntity",
+          "kind": "fun",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/login/LoginCredentialsModel.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "LoginCredentialsModel",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/login/LoginDataModel.kt",
+      "language": "kotlin",
+      "lines": 14,
+      "imports": [
+        "com.kmp.core.utils.network.enums.CodeServices"
+      ],
+      "symbols": [
+        {
+          "name": "LoginDataModel",
+          "kind": "class",
+          "line": 9,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/login/LoginModel.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "LoginModel",
+          "kind": "class",
+          "line": 8,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/login/LoginTokensModel.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "LoginTokensModel",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/packages/PackagesDataModel.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "PackagesDataModel",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/packages/PackagesModel.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "PackagesModel",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/models/user/UserModel.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "UserModel",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/request/login/LoginRequest.kt",
+      "language": "kotlin",
+      "lines": 13,
+      "imports": [
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "LoginCredentialsRequest",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/response/login/LoginDataResponse.kt",
+      "language": "kotlin",
+      "lines": 13,
+      "imports": [
+        "com.kmp.core.utils.network.api.BaseResponse",
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "LoginDataResponse",
+          "kind": "class",
+          "line": 11,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/response/login/LoginResponse.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "LoginResponse",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/response/login/LoginTokensResponse.kt",
+      "language": "kotlin",
+      "lines": 15,
+      "imports": [
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "LoginTokensResponse",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/response/packages/PackagesDataResponse.kt",
+      "language": "kotlin",
+      "lines": 13,
+      "imports": [
+        "com.kmp.core.utils.network.api.BaseResponse",
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesDataResponse",
+          "kind": "class",
+          "line": 11,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/response/packages/PackagesResponse.kt",
+      "language": "kotlin",
+      "lines": 15,
+      "imports": [
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesResponse",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/model/src/commonMain/kotlin/com/kmp/core/model/ui/dialog/DialogUiModel.kt",
+      "language": "kotlin",
+      "lines": 8,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "DialogUiModel",
+          "kind": "class",
+          "line": 3,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/navigation/src/commonMain/kotlin/com/kmp/core/navigation/router/NavigationFeaturesRouter.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "cafe.adriel.voyager.core.screen.Screen"
+      ],
+      "symbols": [
+        {
+          "name": "NavigationFeaturesRouter",
+          "kind": "interface",
+          "line": 5
+        },
+        {
+          "name": "getScreenAfterSplash",
+          "kind": "fun",
+          "line": 7,
+          "container": "NavigationFeaturesRouter"
+        },
+        {
+          "name": "getSplashScreen",
+          "kind": "fun",
+          "line": 9,
+          "container": "NavigationFeaturesRouter"
+        },
+        {
+          "name": "getWelcomeScreen",
+          "kind": "fun",
+          "line": 10,
+          "container": "NavigationFeaturesRouter"
+        },
+        {
+          "name": "getLoginScreen",
+          "kind": "fun",
+          "line": 11,
+          "container": "NavigationFeaturesRouter"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/androidMain/kotlin/com/kmp/core/network/client/NetworkClient.android.kt",
+      "language": "kotlin",
+      "lines": 80,
+      "imports": [
+        "com.kmp.core.datastore.AppDataStore",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.core.utils.network.constants.Network",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.engine.okhttp.OkHttp",
+        "io.ktor.client.plugins.HttpTimeout",
+        "io.ktor.client.plugins.auth.Auth",
+        "io.ktor.client.plugins.auth.providers.BearerTokens",
+        "io.ktor.client.plugins.auth.providers.bearer",
+        "io.ktor.client.plugins.contentnegotiation.ContentNegotiation",
+        "io.ktor.client.plugins.defaultRequest",
+        "io.ktor.client.plugins.logging.LogLevel",
+        "io.ktor.client.plugins.logging.Logger",
+        "io.ktor.client.plugins.logging.Logging",
+        "io.ktor.http.ContentType",
+        "io.ktor.serialization.kotlinx.json.json",
+        "io.nerdythings.okhttp.profiler.OkHttpProfilerInterceptor",
+        "kotlinx.coroutines.flow.first",
+        "kotlinx.serialization.json.Json"
+      ],
+      "symbols": [
+        {
+          "name": "log",
+          "kind": "fun",
+          "line": 58,
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/androidMain/kotlin/com/kmp/core/network/connection/Connection.android.kt",
+      "language": "kotlin",
+      "lines": 34,
+      "imports": [
+        "android.annotation.SuppressLint",
+        "android.content.Context",
+        "android.net.ConnectivityManager",
+        "android.net.Network",
+        "dev.jordond.connectivity.Connectivity",
+        "dev.jordond.connectivity.ConnectivityProvider",
+        "dev.jordond.connectivity.asProvider",
+        "kotlinx.coroutines.channels.awaitClose",
+        "kotlinx.coroutines.flow.callbackFlow",
+        "org.koin.mp.KoinPlatform.getKoin"
+      ],
+      "symbols": [
+        {
+          "name": "onAvailable",
+          "kind": "fun",
+          "line": 24,
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "onLost",
+          "kind": "fun",
+          "line": 27,
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/client/NetworkClient.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [
+        "com.kmp.core.datastore.AppDataStore",
+        "io.ktor.client.HttpClient"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/connection/Connection.kt",
+      "language": "kotlin",
+      "lines": 9,
+      "imports": [
+        "dev.jordond.connectivity.ConnectivityProvider"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/datasource/login/LoginRemoteDataSource.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "com.kmp.core.model.models.login.LoginCredentialsModel",
+        "com.kmp.core.model.models.login.LoginDataModel",
+        "com.kmp.core.utils.network.api.NetworkResult"
+      ],
+      "symbols": [
+        {
+          "name": "LoginRemoteDataSource",
+          "kind": "interface",
+          "line": 11
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 12,
+          "container": "LoginRemoteDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/datasource/login/LoginRemoteDataSourceImpl.kt",
+      "language": "kotlin",
+      "lines": 40,
+      "imports": [
+        "com.kmp.core.model.mappers.login.toDomain",
+        "com.kmp.core.model.mappers.login.toRequest",
+        "com.kmp.core.model.models.login.LoginCredentialsModel",
+        "com.kmp.core.model.models.login.LoginDataModel",
+        "com.kmp.core.model.response.login.LoginDataResponse",
+        "com.kmp.core.utils.network.api.NetworkResult",
+        "com.kmp.core.utils.network.api.safeApiCall",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.request.post",
+        "io.ktor.client.request.setBody",
+        "io.ktor.http.ContentType",
+        "io.ktor.http.contentType",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "LoginRemoteDataSourceImpl",
+          "kind": "class",
+          "line": 22
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 26,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/datasource/packages/PackagesRemoteDataSource.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [
+        "com.kmp.core.model.response.packages.PackagesDataResponse"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesRemoteDataSource",
+          "kind": "interface",
+          "line": 9
+        },
+        {
+          "name": "getPackages",
+          "kind": "fun",
+          "line": 10,
+          "container": "PackagesRemoteDataSource",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/datasource/packages/PackagesRemoteDataSourceImpl.kt",
+      "language": "kotlin",
+      "lines": 22,
+      "imports": [
+        "com.kmp.core.model.response.packages.PackagesDataResponse",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.call.body",
+        "io.ktor.client.request.get",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "PackagesRemoteDataSourceImpl",
+          "kind": "class",
+          "line": 14
+        },
+        {
+          "name": "getPackages",
+          "kind": "fun",
+          "line": 18,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/di/NetworkModule.kt",
+      "language": "kotlin",
+      "lines": 27,
+      "imports": [
+        "com.kmp.core.datastore.AppDataStore",
+        "com.kmp.core.network.client.createHttpClient",
+        "com.kmp.core.network.connection.getConnectivityProvider",
+        "dev.jordond.connectivity.Connectivity",
+        "dev.jordond.connectivity.ConnectivityProvider",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "CoreNetworkModule",
+          "kind": "class",
+          "line": 16
+        },
+        {
+          "name": "httpClient",
+          "kind": "fun",
+          "line": 19,
+          "container": "CoreNetworkModule"
+        },
+        {
+          "name": "connectivityProvider",
+          "kind": "fun",
+          "line": 22,
+          "container": "CoreNetworkModule"
+        },
+        {
+          "name": "connectivity",
+          "kind": "fun",
+          "line": 25,
+          "container": "CoreNetworkModule"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/repository/login/LoginRepository.kt",
+      "language": "kotlin",
+      "lines": 15,
+      "imports": [
+        "com.kmp.core.model.models.login.LoginCredentialsModel",
+        "com.kmp.core.model.models.login.LoginDataModel",
+        "com.kmp.core.utils.network.api.NetworkResult",
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "symbols": [
+        {
+          "name": "LoginRemoteRepository",
+          "kind": "interface",
+          "line": 8
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 10,
+          "container": "LoginRemoteRepository",
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/repository/login/LoginRepositoryImpl.kt",
+      "language": "kotlin",
+      "lines": 31,
+      "imports": [
+        "com.kmp.core.model.models.login.LoginCredentialsModel",
+        "com.kmp.core.model.models.login.LoginDataModel",
+        "com.kmp.core.network.datasource.login.LoginRemoteDataSource",
+        "com.kmp.core.utils.network.api.NetworkResult",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.flow",
+        "kotlinx.coroutines.flow.flowOn",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "LoginRemoteRepositoryImpl",
+          "kind": "class",
+          "line": 14
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 19,
+          "modifiers": [
+            "override",
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/commonMain/kotlin/com/kmp/core/network/usecase/login/LoginRemoteUseCase.kt",
+      "language": "kotlin",
+      "lines": 26,
+      "imports": [
+        "com.kmp.core.model.models.login.LoginCredentialsModel",
+        "com.kmp.core.model.models.login.LoginDataModel",
+        "com.kmp.core.network.repository.login.LoginRemoteRepository",
+        "com.kmp.core.utils.network.api.NetworkResult",
+        "kotlinx.coroutines.flow.Flow",
+        "org.koin.core.annotation.Factory"
+      ],
+      "symbols": [
+        {
+          "name": "LoginRemoteUseCase",
+          "kind": "class",
+          "line": 11
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 15,
+          "modifiers": [
+            "suspend"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/iosMain/kotlin/com/kmp/core/network/client/NetworkClient.ios.kt",
+      "language": "kotlin",
+      "lines": 73,
+      "imports": [
+        "com.kmp.core.datastore.AppDataStore",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.core.utils.network.constants.Network",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.engine.darwin.Darwin",
+        "io.ktor.client.plugins.HttpTimeout",
+        "io.ktor.client.plugins.auth.Auth",
+        "io.ktor.client.plugins.auth.providers.BearerTokens",
+        "io.ktor.client.plugins.auth.providers.bearer",
+        "io.ktor.client.plugins.contentnegotiation.ContentNegotiation",
+        "io.ktor.client.plugins.defaultRequest",
+        "io.ktor.client.plugins.logging.LogLevel",
+        "io.ktor.client.plugins.logging.Logger",
+        "io.ktor.client.plugins.logging.Logging",
+        "io.ktor.http.ContentType",
+        "io.ktor.serialization.kotlinx.json.json",
+        "kotlinx.coroutines.flow.first",
+        "kotlinx.serialization.json.Json"
+      ],
+      "symbols": [
+        {
+          "name": "log",
+          "kind": "fun",
+          "line": 57,
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/network/src/iosMain/kotlin/com/kmp/core/network/connection/Connection.ios.kt",
+      "language": "kotlin",
+      "lines": 35,
+      "imports": [
+        "dev.jordond.connectivity.Connectivity",
+        "dev.jordond.connectivity.ConnectivityProvider",
+        "dev.jordond.connectivity.asProvider",
+        "kotlinx.coroutines.channels.awaitClose",
+        "kotlinx.coroutines.flow.callbackFlow",
+        "platform.Network.nw_path_get_status",
+        "platform.Network.nw_path_monitor_cancel",
+        "platform.Network.nw_path_monitor_create",
+        "platform.Network.nw_path_monitor_set_queue",
+        "platform.Network.nw_path_monitor_set_update_handler",
+        "platform.Network.nw_path_monitor_start",
+        "platform.Network.nw_path_status_satisfied",
+        "platform.darwin.dispatch_get_main_queue"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/animation/Animation.kt",
+      "language": "kotlin",
+      "lines": 52,
+      "imports": [
+        "androidx.compose.animation.EnterTransition",
+        "androidx.compose.animation.ExitTransition",
+        "androidx.compose.animation.core.FastOutSlowInEasing",
+        "androidx.compose.animation.core.tween",
+        "androidx.compose.animation.expandVertically",
+        "androidx.compose.animation.fadeIn",
+        "androidx.compose.animation.fadeOut",
+        "androidx.compose.animation.scaleIn",
+        "androidx.compose.animation.scaleOut",
+        "androidx.compose.animation.shrinkVertically",
+        "androidx.compose.animation.togetherWith",
+        "androidx.compose.animation.ContentTransform",
+        "androidx.compose.ui.Alignment"
+      ],
+      "symbols": [
+        {
+          "name": "Animation",
+          "kind": "object",
+          "line": 21
+        },
+        {
+          "name": "scaleTransition",
+          "kind": "fun",
+          "line": 26,
+          "container": "Animation"
+        },
+        {
+          "name": "fadeInTransition",
+          "kind": "fun",
+          "line": 35,
+          "container": "Animation"
+        },
+        {
+          "name": "fadeOutTransition",
+          "kind": "fun",
+          "line": 38,
+          "container": "Animation"
+        },
+        {
+          "name": "expandVerticallyTransition",
+          "kind": "fun",
+          "line": 41,
+          "container": "Animation"
+        },
+        {
+          "name": "shrinkVerticallyTransition",
+          "kind": "fun",
+          "line": 47,
+          "container": "Animation"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/constants/ConstantsGeneral.kt",
+      "language": "kotlin",
+      "lines": 5,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "ConstantsGeneral",
+          "kind": "object",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/datastore/DS.kt",
+      "language": "kotlin",
+      "lines": 17,
+      "imports": [
+        "androidx.datastore.preferences.core.booleanPreferencesKey",
+        "androidx.datastore.preferences.core.stringPreferencesKey"
+      ],
+      "symbols": [
+        {
+          "name": "DS",
+          "kind": "object",
+          "line": 10
+        },
+        {
+          "name": "KEY",
+          "kind": "object",
+          "line": 13,
+          "container": "DS"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/enums/BuildTypes.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "BuildTypes",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "enum"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/extensions/IntExtensions.kt",
+      "language": "kotlin",
+      "lines": 8,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "convertToDouble",
+          "kind": "fun",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/flow/LaunchedEffect.kt",
+      "language": "kotlin",
+      "lines": 18,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "kotlinx.coroutines.flow.StateFlow",
+        "kotlinx.coroutines.flow.collectLatest"
+      ],
+      "symbols": []
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/logs/KmpLogger.kt",
+      "language": "kotlin",
+      "lines": 29,
+      "imports": [
+        "io.github.aakira.napier.Antilog",
+        "io.github.aakira.napier.Napier"
+      ],
+      "symbols": [
+        {
+          "name": "KmpLogger",
+          "kind": "object",
+          "line": 10
+        },
+        {
+          "name": "init",
+          "kind": "fun",
+          "line": 12,
+          "container": "KmpLogger"
+        },
+        {
+          "name": "log",
+          "kind": "fun",
+          "line": 16,
+          "container": "KmpLogger"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/logs/Log.kt",
+      "language": "kotlin",
+      "lines": 53,
+      "imports": [
+        "io.github.aakira.napier.Antilog",
+        "io.github.aakira.napier.Napier"
+      ],
+      "symbols": [
+        {
+          "name": "Log",
+          "kind": "object",
+          "line": 10
+        },
+        {
+          "name": "debug",
+          "kind": "fun",
+          "line": 12,
+          "container": "Log"
+        },
+        {
+          "name": "info",
+          "kind": "fun",
+          "line": 22,
+          "container": "Log"
+        },
+        {
+          "name": "error",
+          "kind": "fun",
+          "line": 32,
+          "container": "Log"
+        },
+        {
+          "name": "network",
+          "kind": "fun",
+          "line": 44,
+          "container": "Log"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/logs/TypeLog.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "TypeLog",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "enum"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/network/api/BaseResponse.kt",
+      "language": "kotlin",
+      "lines": 14,
+      "imports": [
+        "kotlinx.serialization.Serializable"
+      ],
+      "symbols": [
+        {
+          "name": "BaseResponse",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "open"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/network/api/NetworkApiHelper.kt",
+      "language": "kotlin",
+      "lines": 65,
+      "imports": [
+        "io.ktor.client.call.body",
+        "io.ktor.client.plugins.ClientRequestException",
+        "io.ktor.client.plugins.ServerResponseException",
+        "io.ktor.client.statement.HttpResponse",
+        "io.ktor.http.isSuccess",
+        "kotlinx.coroutines.TimeoutCancellationException",
+        "kotlinx.io.IOException"
+      ],
+      "symbols": [
+        {
+          "name": "safeApiCall",
+          "kind": "fun",
+          "line": 15,
+          "modifiers": [
+            "suspend",
+            "inline"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/network/api/NetworkResult.kt",
+      "language": "kotlin",
+      "lines": 22,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "NetworkResult",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "Success",
+          "kind": "class",
+          "line": 8,
+          "container": "NetworkResult",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "Error",
+          "kind": "class",
+          "line": 9,
+          "container": "NetworkResult",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "NetworkErrorType",
+          "kind": "class",
+          "line": 17,
+          "modifiers": [
+            "enum"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/network/constants/Network.kt",
+      "language": "kotlin",
+      "lines": 21,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "Network",
+          "kind": "object",
+          "line": 3
+        },
+        {
+          "name": "Client",
+          "kind": "object",
+          "line": 5,
+          "container": "Network"
+        },
+        {
+          "name": "Constants",
+          "kind": "object",
+          "line": 13,
+          "container": "Network"
+        }
+      ]
+    },
+    {
+      "path": "features/core/core/utils/src/commonMain/kotlin/com/kmp/core/utils/network/enums/CodeServices.kt",
+      "language": "kotlin",
+      "lines": 14,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "CodeServices",
+          "kind": "class",
+          "line": 3,
+          "modifiers": [
+            "enum"
+          ]
+        },
+        {
+          "name": "fromCode",
+          "kind": "fun",
+          "line": 10,
+          "container": "CodeServices"
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureLogic/usecase/ValidateLoginUseCase.kt",
+      "language": "kotlin",
+      "lines": 18,
+      "imports": [
+        "com.kmp.feature.login.featureLogic.validation.ValidationResult",
+        "org.koin.core.annotation.Factory"
+      ],
+      "symbols": [
+        {
+          "name": "ValidateLoginUseCase",
+          "kind": "class",
+          "line": 7
+        },
+        {
+          "name": "invoke",
+          "kind": "fun",
+          "line": 9,
+          "container": "ValidateLoginUseCase",
+          "modifiers": [
+            "operator"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureLogic/validation/ValidationResult.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "ValidationResult",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "EmailEmpty",
+          "kind": "object",
+          "line": 8,
+          "container": "ValidationResult",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "PasswordEmpty",
+          "kind": "object",
+          "line": 9,
+          "container": "ValidationResult",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "ValidationSuccess",
+          "kind": "object",
+          "line": 10,
+          "container": "ValidationResult",
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/di/LoginModule.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module"
+      ],
+      "symbols": [
+        {
+          "name": "LoginModule",
+          "kind": "class",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/navigation/LoginNavigation.kt",
+      "language": "kotlin",
+      "lines": 23,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "cafe.adriel.voyager.core.screen.Screen",
+        "cafe.adriel.voyager.navigator.LocalNavigator",
+        "cafe.adriel.voyager.navigator.currentOrThrow",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.feature.login.featureUi.presentation.ui.LoginScreen"
+      ],
+      "symbols": [
+        {
+          "name": "LoginScreenInstance",
+          "kind": "object",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "Content",
+          "kind": "fun",
+          "line": 12,
+          "container": "LoginScreenInstance",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/ui/LoginContainer.kt",
+      "language": "kotlin",
+      "lines": 149,
+      "imports": [
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.rememberScrollState",
+        "androidx.compose.foundation.text.KeyboardActions",
+        "androidx.compose.foundation.verticalScroll",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.platform.LocalFocusManager",
+        "androidx.compose.ui.text.input.ImeAction",
+        "androidx.compose.ui.text.input.KeyboardType",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.button.ButtonPrimary",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.field.TextFieldPassword",
+        "com.kmp.core.design.component.field.TextFieldSimple",
+        "com.kmp.core.design.component.image.Image",
+        "com.kmp.core.design.component.text.TextBigBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.feature.login.generated.resources.Res",
+        "com.kmp.feature.login.generated.resources.email",
+        "com.kmp.feature.login.generated.resources.email_example",
+        "com.kmp.feature.login.generated.resources.ic_email",
+        "com.kmp.feature.login.generated.resources.ic_kotlin",
+        "com.kmp.feature.login.generated.resources.ic_password",
+        "com.kmp.feature.login.generated.resources.ic_visibility_off",
+        "com.kmp.feature.login.generated.resources.ic_visibility_on",
+        "com.kmp.feature.login.generated.resources.login",
+        "com.kmp.feature.login.generated.resources.password",
+        "com.kmp.feature.login.generated.resources.password_example",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "LoginContainer",
+          "kind": "fun",
+          "line": 43
+        },
+        {
+          "name": "LoginContainerPreview",
+          "kind": "fun",
+          "line": 145,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/ui/LoginScreen.kt",
+      "language": "kotlin",
+      "lines": 109,
+      "imports": [
+        "androidx.compose.animation.AnimatedContent",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.lifecycle.compose.collectAsStateWithLifecycle",
+        "com.kmp.core.design.component.container.SafeScreenContainer",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.dialog.ErrorDialog",
+        "com.kmp.core.design.component.loader.Loader",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.model.ui.dialog.DialogUiModel",
+        "com.kmp.core.utils.animation.Animation",
+        "com.kmp.core.utils.constants.ConstantsGeneral",
+        "com.kmp.core.utils.flow.CollectWithLifecycle",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.feature.login.featureUi.presentation.viewmodel.LoginUiEvent",
+        "com.kmp.feature.login.featureUi.presentation.viewmodel.LoginViewModel",
+        "com.kmp.feature.login.generated.resources.Res",
+        "com.kmp.feature.login.generated.resources.accept",
+        "com.kmp.feature.login.generated.resources.please_try_again_later",
+        "com.kmp.feature.login.generated.resources.warning",
+        "org.jetbrains.compose.resources.stringResource",
+        "org.koin.compose.viewmodel.koinViewModel"
+      ],
+      "symbols": [
+        {
+          "name": "LoginScreen",
+          "kind": "fun",
+          "line": 28
+        },
+        {
+          "name": "LoginScreenPreview",
+          "kind": "fun",
+          "line": 105,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/viewmodel/LoginUiEvent.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "LoginUiEvent",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "Idle",
+          "kind": "object",
+          "line": 8,
+          "container": "LoginUiEvent",
+          "modifiers": [
+            "internal",
+            "data"
+          ]
+        },
+        {
+          "name": "LoginSuccess",
+          "kind": "object",
+          "line": 9,
+          "container": "LoginUiEvent",
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/viewmodel/LoginUiState.kt",
+      "language": "kotlin",
+      "lines": 19,
+      "imports": [
+        "com.kmp.core.design.enums.StatusLoading",
+        "com.kmp.core.model.ui.dialog.DialogUiModel"
+      ],
+      "symbols": [
+        {
+          "name": "LoginUiState",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login-cenam/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/viewmodel/LoginViewModel.kt",
+      "language": "kotlin",
+      "lines": 248,
+      "imports": [
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "com.kmp.core.database.usecase.user.UserDataBaseUseCase",
+        "com.kmp.core.datastore.usecase.user.UserDataStoreUseCase",
+        "com.kmp.core.design.enums.StatusLoading",
+        "com.kmp.core.model.models.login.LoginTokensModel",
+        "com.kmp.core.model.ui.dialog.DialogUiModel",
+        "com.kmp.core.network.usecase.login.LoginRemoteUseCase",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.core.utils.network.api.NetworkResult",
+        "com.kmp.core.utils.network.constants.Network",
+        "com.kmp.core.utils.network.enums.CodeServices",
+        "com.kmp.feature.login.featureLogic.usecase.ValidateLoginUseCase",
+        "com.kmp.feature.login.featureLogic.validation.ValidationResult",
+        "com.kmp.feature.login.generated.resources.Res",
+        "com.kmp.feature.login.generated.resources.email_empty",
+        "com.kmp.feature.login.generated.resources.password_empty",
+        "com.kmp.feature.login.generated.resources.please_try_again_later",
+        "com.kmp.feature.login.generated.resources.user_not_register",
+        "com.kmp.feature.login.generated.resources.warning",
+        "com.kmp.feature.login.generated.resources.wrong_credentials",
+        "kotlinx.coroutines.flow.MutableStateFlow",
+        "kotlinx.coroutines.flow.StateFlow",
+        "kotlinx.coroutines.flow.asStateFlow",
+        "kotlinx.coroutines.flow.catch",
+        "kotlinx.coroutines.flow.collect",
+        "kotlinx.coroutines.flow.onStart",
+        "kotlinx.coroutines.flow.update",
+        "kotlinx.coroutines.launch",
+        "org.jetbrains.compose.resources.StringResource",
+        "org.koin.core.annotation.KoinViewModel"
+      ],
+      "symbols": [
+        {
+          "name": "LoginViewModel",
+          "kind": "class",
+          "line": 40
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 57
+        },
+        {
+          "name": "getCredentialsUser",
+          "kind": "fun",
+          "line": 71
+        },
+        {
+          "name": "onBiometricResult",
+          "kind": "fun",
+          "line": 96
+        },
+        {
+          "name": "loginValidation",
+          "kind": "fun",
+          "line": 107
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 127,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "insertUsers",
+          "kind": "fun",
+          "line": 174,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "validateUserToke",
+          "kind": "fun",
+          "line": 189,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 198,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 209
+        },
+        {
+          "name": "updateEmail",
+          "kind": "fun",
+          "line": 217
+        },
+        {
+          "name": "updatePassword",
+          "kind": "fun",
+          "line": 221
+        },
+        {
+          "name": "updateRequestNotificationPermission",
+          "kind": "fun",
+          "line": 225
+        },
+        {
+          "name": "updateNavigateAfterPermission",
+          "kind": "fun",
+          "line": 229
+        },
+        {
+          "name": "updateStatusRememberCredentials",
+          "kind": "fun",
+          "line": 233
+        },
+        {
+          "name": "resetUiEvent",
+          "kind": "fun",
+          "line": 237
+        },
+        {
+          "name": "showErrorDialog",
+          "kind": "fun",
+          "line": 241
+        },
+        {
+          "name": "onDismissErrorDialog",
+          "kind": "fun",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureLogic/usecase/ValidateLoginUseCase.kt",
+      "language": "kotlin",
+      "lines": 18,
+      "imports": [
+        "com.kmp.feature.login.featureLogic.validation.ValidationResult",
+        "org.koin.core.annotation.Factory"
+      ],
+      "symbols": [
+        {
+          "name": "ValidateLoginUseCase",
+          "kind": "class",
+          "line": 7
+        },
+        {
+          "name": "invoke",
+          "kind": "fun",
+          "line": 9,
+          "container": "ValidateLoginUseCase",
+          "modifiers": [
+            "operator"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureLogic/validation/ValidationResult.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "ValidationResult",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "EmailEmpty",
+          "kind": "object",
+          "line": 8,
+          "container": "ValidationResult",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "PasswordEmpty",
+          "kind": "object",
+          "line": 9,
+          "container": "ValidationResult",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "ValidationSuccess",
+          "kind": "object",
+          "line": 10,
+          "container": "ValidationResult",
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/di/LoginModule.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module"
+      ],
+      "symbols": [
+        {
+          "name": "LoginModule",
+          "kind": "class",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/navigation/LoginNavigation.kt",
+      "language": "kotlin",
+      "lines": 23,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "cafe.adriel.voyager.core.screen.Screen",
+        "cafe.adriel.voyager.navigator.LocalNavigator",
+        "cafe.adriel.voyager.navigator.currentOrThrow",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.feature.login.featureUi.presentation.ui.LoginScreen"
+      ],
+      "symbols": [
+        {
+          "name": "LoginScreenInstance",
+          "kind": "object",
+          "line": 10,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "Content",
+          "kind": "fun",
+          "line": 12,
+          "container": "LoginScreenInstance",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/ui/LoginContainer.kt",
+      "language": "kotlin",
+      "lines": 149,
+      "imports": [
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.rememberScrollState",
+        "androidx.compose.foundation.text.KeyboardActions",
+        "androidx.compose.foundation.verticalScroll",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.platform.LocalFocusManager",
+        "androidx.compose.ui.text.input.ImeAction",
+        "androidx.compose.ui.text.input.KeyboardType",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.button.ButtonPrimary",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.field.TextFieldPassword",
+        "com.kmp.core.design.component.field.TextFieldSimple",
+        "com.kmp.core.design.component.image.Image",
+        "com.kmp.core.design.component.text.TextBigBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.feature.login.generated.resources.Res",
+        "com.kmp.feature.login.generated.resources.email",
+        "com.kmp.feature.login.generated.resources.email_example",
+        "com.kmp.feature.login.generated.resources.ic_email",
+        "com.kmp.feature.login.generated.resources.ic_kotlin",
+        "com.kmp.feature.login.generated.resources.ic_password",
+        "com.kmp.feature.login.generated.resources.ic_visibility_off",
+        "com.kmp.feature.login.generated.resources.ic_visibility_on",
+        "com.kmp.feature.login.generated.resources.login",
+        "com.kmp.feature.login.generated.resources.password",
+        "com.kmp.feature.login.generated.resources.password_example",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "LoginContainer",
+          "kind": "fun",
+          "line": 43
+        },
+        {
+          "name": "LoginContainerPreview",
+          "kind": "fun",
+          "line": 145,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/ui/LoginScreen.kt",
+      "language": "kotlin",
+      "lines": 124,
+      "imports": [
+        "androidx.compose.animation.AnimatedContent",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.lifecycle.compose.collectAsStateWithLifecycle",
+        "com.kmp.core.design.component.container.SafeScreenContainer",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.dialog.ErrorDialog",
+        "com.kmp.core.design.component.loader.Loader",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.utils.animation.Animation",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.feature.login.featureUi.presentation.viewmodel.LoginUiEvent",
+        "com.kmp.feature.login.featureUi.presentation.viewmodel.LoginViewModel",
+        "com.kmp.feature.login.generated.resources.Res",
+        "com.kmp.feature.login.generated.resources.accept",
+        "com.kmp.feature.login.generated.resources.idle",
+        "com.kmp.feature.login.generated.resources.warning",
+        "org.jetbrains.compose.resources.stringResource",
+        "org.koin.compose.viewmodel.koinViewModel"
+      ],
+      "symbols": [
+        {
+          "name": "LoginScreen",
+          "kind": "fun",
+          "line": 25
+        },
+        {
+          "name": "LoginScreenPreview",
+          "kind": "fun",
+          "line": 120,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/viewmodel/LoginUiEvent.kt",
+      "language": "kotlin",
+      "lines": 15,
+      "imports": [
+        "org.jetbrains.compose.resources.StringResource"
+      ],
+      "symbols": [
+        {
+          "name": "LoginUiEvent",
+          "kind": "class",
+          "line": 10,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "Idle",
+          "kind": "object",
+          "line": 11,
+          "container": "LoginUiEvent",
+          "modifiers": [
+            "internal",
+            "data"
+          ]
+        },
+        {
+          "name": "ShowErrorDialog",
+          "kind": "class",
+          "line": 12,
+          "container": "LoginUiEvent",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "LoginSuccess",
+          "kind": "object",
+          "line": 13,
+          "container": "LoginUiEvent",
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/viewmodel/LoginUiState.kt",
+      "language": "kotlin",
+      "lines": 17,
+      "imports": [
+        "com.kmp.core.design.enums.StatusLoading"
+      ],
+      "symbols": [
+        {
+          "name": "LoginUiState",
+          "kind": "class",
+          "line": 9,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/login/login/src/commonMain/kotlin/com/kmp/feature/login/featureUi/presentation/viewmodel/LoginViewModel.kt",
+      "language": "kotlin",
+      "lines": 243,
+      "imports": [
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "com.kmp.core.database.usecase.user.UserDataBaseUseCase",
+        "com.kmp.core.datastore.usecase.user.UserDataStoreUseCase",
+        "com.kmp.core.design.enums.StatusLoading",
+        "com.kmp.core.model.models.login.LoginTokensModel",
+        "com.kmp.core.network.usecase.login.LoginRemoteUseCase",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.core.utils.network.api.NetworkResult",
+        "com.kmp.core.utils.network.constants.Network",
+        "com.kmp.core.utils.network.enums.CodeServices",
+        "com.kmp.feature.login.featureLogic.usecase.ValidateLoginUseCase",
+        "com.kmp.feature.login.featureLogic.validation.ValidationResult",
+        "com.kmp.feature.login.generated.resources.Res",
+        "com.kmp.feature.login.generated.resources.email_empty",
+        "com.kmp.feature.login.generated.resources.password_empty",
+        "com.kmp.feature.login.generated.resources.please_try_again_later",
+        "com.kmp.feature.login.generated.resources.user_not_register",
+        "com.kmp.feature.login.generated.resources.wrong_credentials",
+        "kotlinx.coroutines.flow.MutableStateFlow",
+        "kotlinx.coroutines.flow.StateFlow",
+        "kotlinx.coroutines.flow.asStateFlow",
+        "kotlinx.coroutines.flow.catch",
+        "kotlinx.coroutines.flow.collect",
+        "kotlinx.coroutines.flow.onStart",
+        "kotlinx.coroutines.flow.update",
+        "kotlinx.coroutines.launch",
+        "org.jetbrains.compose.resources.StringResource",
+        "org.koin.core.annotation.KoinViewModel"
+      ],
+      "symbols": [
+        {
+          "name": "LoginViewModel",
+          "kind": "class",
+          "line": 38
+        },
+        {
+          "name": "getStatusUserCredentials",
+          "kind": "fun",
+          "line": 56
+        },
+        {
+          "name": "getCredentialsUser",
+          "kind": "fun",
+          "line": 70
+        },
+        {
+          "name": "onBiometricResult",
+          "kind": "fun",
+          "line": 95
+        },
+        {
+          "name": "loginValidation",
+          "kind": "fun",
+          "line": 106
+        },
+        {
+          "name": "login",
+          "kind": "fun",
+          "line": 126,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "insertUsers",
+          "kind": "fun",
+          "line": 173,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "validateUserToke",
+          "kind": "fun",
+          "line": 188,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "saveUserToken",
+          "kind": "fun",
+          "line": 197,
+          "modifiers": [
+            "private"
+          ]
+        },
+        {
+          "name": "saveStatusUserCredentials",
+          "kind": "fun",
+          "line": 208
+        },
+        {
+          "name": "updateEmail",
+          "kind": "fun",
+          "line": 216
+        },
+        {
+          "name": "updatePassword",
+          "kind": "fun",
+          "line": 220
+        },
+        {
+          "name": "updateRequestNotificationPermission",
+          "kind": "fun",
+          "line": 224
+        },
+        {
+          "name": "updateNavigateAfterPermission",
+          "kind": "fun",
+          "line": 228
+        },
+        {
+          "name": "updateStatusRememberCredentials",
+          "kind": "fun",
+          "line": 232
+        },
+        {
+          "name": "resetUiEvent",
+          "kind": "fun",
+          "line": 236
+        },
+        {
+          "name": "showErrorDialog",
+          "kind": "fun",
+          "line": 240
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/di/SplashModule.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module"
+      ],
+      "symbols": [
+        {
+          "name": "SplashModule",
+          "kind": "class",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/controller/NavigationController.kt",
+      "language": "kotlin",
+      "lines": 20,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "cafe.adriel.voyager.navigator.Navigator",
+        "cafe.adriel.voyager.transitions.ScaleTransition",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.feature.splash.featureUi.presentation.navigation.SplashScreenInstance"
+      ],
+      "symbols": [
+        {
+          "name": "NavigationController",
+          "kind": "fun",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/navigation/SplashNavigation.kt",
+      "language": "kotlin",
+      "lines": 29,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "cafe.adriel.voyager.core.screen.Screen",
+        "cafe.adriel.voyager.navigator.LocalNavigator",
+        "cafe.adriel.voyager.navigator.currentOrThrow",
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.feature.splash.featureUi.presentation.ui.SplashScreen",
+        "org.koin.compose.koinInject"
+      ],
+      "symbols": [
+        {
+          "name": "SplashScreenInstance",
+          "kind": "object",
+          "line": 15,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "Content",
+          "kind": "fun",
+          "line": 17,
+          "container": "SplashScreenInstance",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/ui/SplashContainer.kt",
+      "language": "kotlin",
+      "lines": 101,
+      "imports": [
+        "androidx.compose.animation.core.Spring",
+        "androidx.compose.animation.core.animateFloatAsState",
+        "androidx.compose.animation.core.spring",
+        "androidx.compose.foundation.Image",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.LaunchedEffect",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.draw.scale",
+        "androidx.compose.ui.graphics.graphicsLayer",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.feature.splash.generated.resources.*",
+        "kotlinx.coroutines.delay",
+        "org.jetbrains.compose.resources.painterResource",
+        "kotlin.time.Duration.Companion.milliseconds"
+      ],
+      "symbols": [
+        {
+          "name": "SplashContainer",
+          "kind": "fun",
+          "line": 34
+        },
+        {
+          "name": "SplashContainerPreview",
+          "kind": "fun",
+          "line": 97,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/ui/SplashScreen.kt",
+      "language": "kotlin",
+      "lines": 62,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.lifecycle.compose.collectAsStateWithLifecycle",
+        "com.kmp.core.design.component.container.SafeScreenContainer",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.feature.splash.featureUi.presentation.viewmodel.SplashUiEvent",
+        "com.kmp.feature.splash.featureUi.presentation.viewmodel.SplashViewModel",
+        "com.kmp.feature.splash.generated.resources.Res",
+        "com.kmp.feature.splash.generated.resources.idle",
+        "org.jetbrains.compose.resources.stringResource",
+        "org.koin.compose.viewmodel.koinViewModel"
+      ],
+      "symbols": [
+        {
+          "name": "SplashScreen",
+          "kind": "fun",
+          "line": 23
+        },
+        {
+          "name": "SplashScreenPreview",
+          "kind": "fun",
+          "line": 58,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/viewmodel/SplashUiEvent.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "SplashUiEvent",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "Idle",
+          "kind": "object",
+          "line": 8,
+          "container": "SplashUiEvent",
+          "modifiers": [
+            "internal",
+            "data"
+          ]
+        },
+        {
+          "name": "NavigateToWelcome",
+          "kind": "object",
+          "line": 9,
+          "container": "SplashUiEvent",
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "NavigateToNextScreen",
+          "kind": "object",
+          "line": 10,
+          "container": "SplashUiEvent",
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/viewmodel/SplashUiState.kt",
+      "language": "kotlin",
+      "lines": 10,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "SplashUiState",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/splash/splash/src/commonMain/kotlin/com/kmp/feature/splash/featureUi/presentation/viewmodel/SplashViewModel.kt",
+      "language": "kotlin",
+      "lines": 48,
+      "imports": [
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "kotlinx.coroutines.delay",
+        "kotlinx.coroutines.flow.MutableStateFlow",
+        "kotlinx.coroutines.flow.StateFlow",
+        "kotlinx.coroutines.flow.asStateFlow",
+        "kotlinx.coroutines.flow.update",
+        "kotlinx.coroutines.launch",
+        "org.koin.core.annotation.KoinViewModel",
+        "kotlin.time.Duration.Companion.milliseconds"
+      ],
+      "symbols": [
+        {
+          "name": "SplashViewModel",
+          "kind": "class",
+          "line": 19
+        },
+        {
+          "name": "simulateSplash",
+          "kind": "fun",
+          "line": 31,
+          "container": "SplashViewModel"
+        },
+        {
+          "name": "updateIsLogoVisible",
+          "kind": "fun",
+          "line": 37,
+          "container": "SplashViewModel"
+        },
+        {
+          "name": "updateIsBrandingVisible",
+          "kind": "fun",
+          "line": 41,
+          "container": "SplashViewModel"
+        },
+        {
+          "name": "resetUiEvent",
+          "kind": "fun",
+          "line": 45,
+          "container": "SplashViewModel"
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/items/ClaroContactItem.kt",
+      "language": "kotlin",
+      "lines": 137,
+      "imports": [
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.clickable",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Surface",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.text.style.TextAlign",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.container.SafeScreenContainer",
+        "com.kmp.core.design.component.text.TextMediumBold",
+        "com.kmp.core.design.component.text.TextSmall",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.model.mappers.claro_contact.ClaroContactModel",
+        "com.kmp.feature.welcome.generated.resources.Res",
+        "com.kmp.feature.welcome.generated.resources.example",
+        "com.kmp.feature.welcome.generated.resources.ic_delete",
+        "com.kmp.feature.welcome.generated.resources.ic_phone",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroContactItem",
+          "kind": "fun",
+          "line": 41
+        },
+        {
+          "name": "ClaroContactItemPreview",
+          "kind": "fun",
+          "line": 126,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/presentation/navigation/ClaroDashboardInstance.kt",
+      "language": "kotlin",
+      "lines": 15,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "cafe.adriel.voyager.core.screen.Screen",
+        "cafe.adriel.voyager.navigator.LocalNavigator",
+        "cafe.adriel.voyager.navigator.currentOrThrow",
+        "com.kmp.feature.claroHome.featureUi.presentation.ui.ClaroDashboardScreen"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroDashboardScreenInstance",
+          "kind": "object",
+          "line": 9,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "Content",
+          "kind": "fun",
+          "line": 11,
+          "container": "ClaroDashboardScreenInstance",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/presentation/ui/ClaroDashboardContactsContent.kt",
+      "language": "kotlin",
+      "lines": 78,
+      "imports": [
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.lazy.LazyColumn",
+        "androidx.compose.foundation.lazy.items",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.text.TextBigBold",
+        "com.kmp.core.design.component.text.TextMedium",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.model.mappers.claro_contact.ClaroContactModel",
+        "com.kmp.feature.claroHome.featureUi.items.ClaroContactItem",
+        "com.kmp.feature.claroHome.featureUi.preview.ClaroContactMock"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroDashboardContactsContent",
+          "kind": "fun",
+          "line": 28
+        },
+        {
+          "name": "ClaroDashboardContactsContentPreview",
+          "kind": "fun",
+          "line": 72,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/presentation/ui/ClaroDashboardHeaderContent.kt",
+      "language": "kotlin",
+      "lines": 99,
+      "imports": [
+        "androidx.compose.animation.AnimatedVisibility",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.material3.Icon",
+        "androidx.compose.material3.IconButton",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.text.style.TextAlign",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.text.TextMediumBold",
+        "com.kmp.core.design.component.text.TextSmall",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.utils.animation.Animation",
+        "com.kmp.feature.welcome.generated.resources.Res",
+        "com.kmp.feature.welcome.generated.resources.ic_arrow_down",
+        "com.kmp.feature.welcome.generated.resources.ic_close",
+        "org.jetbrains.compose.resources.painterResource"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroDashboardHeaderContent",
+          "kind": "fun",
+          "line": 34
+        },
+        {
+          "name": "ClaroDashboardHeaderContentPreview",
+          "kind": "fun",
+          "line": 95,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/presentation/ui/ClaroDashboardHomeContent.kt",
+      "language": "kotlin",
+      "lines": 80,
+      "imports": [
+        "androidx.compose.animation.AnimatedVisibility",
+        "androidx.compose.foundation.background",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.PaddingValues",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.lazy.LazyColumn",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.navigationbar.ClaroBottomNavigationWithIndicator",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.utils.animation.Animation",
+        "com.kmp.feature.claroHome.featureUi.preview.ClaroContactMock",
+        "org.jetbrains.compose.resources.DrawableResource"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroDashboardHomeContent",
+          "kind": "fun",
+          "line": 28
+        },
+        {
+          "name": "ClaroDashboardHomeContentPreview",
+          "kind": "fun",
+          "line": 73,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/presentation/ui/ClaroDashboardScreen.kt",
+      "language": "kotlin",
+      "lines": 68,
+      "imports": [
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableIntStateOf",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.setValue",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.container.SafeScreenContainer",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.feature.claroHome.featureUi.preview.ClaroContactMock"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroDashboardScreen",
+          "kind": "fun",
+          "line": 24
+        },
+        {
+          "name": "ClaroDashboardScreenPreview",
+          "kind": "fun",
+          "line": 64,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/claroHome/featureUi/preview/ClaroContactMock.kt",
+      "language": "kotlin",
+      "lines": 75,
+      "imports": [
+        "com.kmp.core.model.mappers.claro_contact.ClaroContactModel",
+        "com.kmp.feature.welcome.generated.resources.Res",
+        "com.kmp.feature.welcome.generated.resources.ic_component",
+        "com.kmp.feature.welcome.generated.resources.ic_home",
+        "com.kmp.feature.welcome.generated.resources.ic_info",
+        "com.kmp.feature.welcome.generated.resources.ic_power",
+        "com.kmp.feature.welcome.generated.resources.ic_profile"
+      ],
+      "symbols": [
+        {
+          "name": "ClaroContactMock",
+          "kind": "object",
+          "line": 15
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/di/WelcomeModule.kt",
+      "language": "kotlin",
+      "lines": 14,
+      "imports": [
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module"
+      ],
+      "symbols": [
+        {
+          "name": "WelcomeModule",
+          "kind": "class",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/presentation/navigation/WelcomeNavigation.kt",
+      "language": "kotlin",
+      "lines": 30,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "cafe.adriel.voyager.core.screen.Screen",
+        "cafe.adriel.voyager.navigator.LocalNavigator",
+        "cafe.adriel.voyager.navigator.currentOrThrow",
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.feature.claroHome.featureUi.presentation.navigation.ClaroDashboardScreenInstance",
+        "com.kmp.feature.welcome.featureUi.presentation.ui.WelcomeScreen",
+        "org.koin.compose.koinInject"
+      ],
+      "symbols": [
+        {
+          "name": "WelcomeScreenInstance",
+          "kind": "object",
+          "line": 16,
+          "modifiers": [
+            "data"
+          ]
+        },
+        {
+          "name": "Content",
+          "kind": "fun",
+          "line": 18,
+          "container": "WelcomeScreenInstance",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/presentation/ui/WelcomeContainer.kt",
+      "language": "kotlin",
+      "lines": 120,
+      "imports": [
+        "androidx.compose.foundation.Image",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.size",
+        "androidx.compose.foundation.rememberScrollState",
+        "androidx.compose.foundation.shape.RoundedCornerShape",
+        "androidx.compose.foundation.verticalScroll",
+        "androidx.compose.material3.CircularProgressIndicator",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.draw.clip",
+        "androidx.compose.ui.layout.ContentScale",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "com.kmp.core.design.component.button.ButtonPrimary",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.text.TextBigBold",
+        "com.kmp.core.design.dimen.Dimens",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.feature.welcome.generated.resources.Res",
+        "com.kmp.feature.welcome.generated.resources.claro_dashboard",
+        "com.kmp.feature.welcome.generated.resources.hello",
+        "com.kmp.feature.welcome.generated.resources.il_placeholder",
+        "com.kmp.feature.welcome.generated.resources.image",
+        "com.kmp.feature.welcome.generated.resources.next",
+        "com.kmp.feature.welcome.generated.resources.version_app",
+        "com.skydoves.landscapist.ImageOptions",
+        "com.skydoves.landscapist.coil3.CoilImage",
+        "org.jetbrains.compose.resources.painterResource",
+        "org.jetbrains.compose.resources.stringResource"
+      ],
+      "symbols": [
+        {
+          "name": "WelcomeContainer",
+          "kind": "fun",
+          "line": 44
+        },
+        {
+          "name": "WelcomeContainerPreview",
+          "kind": "fun",
+          "line": 116,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/presentation/ui/WelcomeScreen.kt",
+      "language": "kotlin",
+      "lines": 94,
+      "imports": [
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.lifecycle.compose.collectAsStateWithLifecycle",
+        "com.kmp.core.design.component.container.SafeScreenContainer",
+        "com.kmp.core.design.component.container.SafeScreenContainerTest",
+        "com.kmp.core.design.component.dialog.InfoDialog",
+        "com.kmp.core.design.theme.AppTheme",
+        "com.kmp.core.model.ui.dialog.DialogUiModel",
+        "com.kmp.core.utils.constants.ConstantsGeneral",
+        "com.kmp.core.utils.flow.CollectWithLifecycle",
+        "com.kmp.core.utils.logs.Log",
+        "com.kmp.feature.welcome.featureUi.presentation.viewmodel.WelcomeUiEvent",
+        "com.kmp.feature.welcome.featureUi.presentation.viewmodel.WelcomeViewModel",
+        "com.kmp.feature.welcome.generated.resources.Res",
+        "com.kmp.feature.welcome.generated.resources.close",
+        "com.kmp.feature.welcome.generated.resources.version_app",
+        "org.jetbrains.compose.resources.stringResource",
+        "org.koin.compose.koinInject",
+        "org.koin.compose.viewmodel.koinViewModel",
+        "org.koin.core.qualifier.named"
+      ],
+      "symbols": [
+        {
+          "name": "WelcomeScreen",
+          "kind": "fun",
+          "line": 30
+        },
+        {
+          "name": "WelcomeScreenPreview",
+          "kind": "fun",
+          "line": 90,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/presentation/viewmodel/WelcomeUiEvent.kt",
+      "language": "kotlin",
+      "lines": 9,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "WelcomeUiEvent",
+          "kind": "class",
+          "line": 7,
+          "modifiers": [
+            "sealed"
+          ]
+        },
+        {
+          "name": "Idle",
+          "kind": "object",
+          "line": 8,
+          "container": "WelcomeUiEvent",
+          "modifiers": [
+            "internal",
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/presentation/viewmodel/WelcomeUiState.kt",
+      "language": "kotlin",
+      "lines": 11,
+      "imports": [
+        "com.kmp.core.model.ui.dialog.DialogUiModel"
+      ],
+      "symbols": [
+        {
+          "name": "WelcomeUiState",
+          "kind": "class",
+          "line": 9,
+          "modifiers": [
+            "data"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "features/welcome/welcome/src/commonMain/kotlin/com/kmp/feature/welcome/featureUi/presentation/viewmodel/WelcomeViewModel.kt",
+      "language": "kotlin",
+      "lines": 38,
+      "imports": [
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.viewModelScope",
+        "com.kmp.core.model.ui.dialog.DialogUiModel",
+        "kotlinx.coroutines.flow.MutableStateFlow",
+        "kotlinx.coroutines.flow.StateFlow",
+        "kotlinx.coroutines.flow.asStateFlow",
+        "kotlinx.coroutines.flow.update",
+        "kotlinx.coroutines.launch",
+        "org.jetbrains.compose.resources.StringResource",
+        "org.koin.core.annotation.KoinViewModel"
+      ],
+      "symbols": [
+        {
+          "name": "WelcomeViewModel",
+          "kind": "class",
+          "line": 19
+        },
+        {
+          "name": "resetUiEvent",
+          "kind": "fun",
+          "line": 27,
+          "container": "WelcomeViewModel"
+        },
+        {
+          "name": "showInfoDialog",
+          "kind": "fun",
+          "line": 31,
+          "container": "WelcomeViewModel"
+        },
+        {
+          "name": "onDismissInfoDialog",
+          "kind": "fun",
+          "line": 35,
+          "container": "WelcomeViewModel"
+        }
+      ]
+    },
+    {
+      "path": "iosApp/iosApp/AppDelegate.swift",
+      "language": "swift",
+      "lines": 18,
+      "imports": [
+        "SwiftUI",
+        "OSLog",
+        "Pulse",
+        "PulseProxy",
+        "PulseUI"
+      ],
+      "symbols": [
+        {
+          "name": "AppDelegate",
+          "kind": "class",
+          "line": 7
+        },
+        {
+          "name": "application",
+          "kind": "func",
+          "line": 9,
+          "container": "AppDelegate"
+        }
+      ]
+    },
+    {
+      "path": "iosApp/iosApp/ContentView.swift",
+      "language": "swift",
+      "lines": 44,
+      "imports": [
+        "UIKit",
+        "SwiftUI",
+        "PulseUI",
+        "Shared"
+      ],
+      "symbols": [
+        {
+          "name": "ComposeView",
+          "kind": "struct",
+          "line": 6
+        },
+        {
+          "name": "makeUIViewController",
+          "kind": "func",
+          "line": 7,
+          "container": "ComposeView"
+        },
+        {
+          "name": "updateUIViewController",
+          "kind": "func",
+          "line": 10,
+          "container": "ComposeView"
+        },
+        {
+          "name": "ContentView",
+          "kind": "struct",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "iosApp/iosApp/iOSApp.swift",
+      "language": "swift",
+      "lines": 24,
+      "imports": [
+        "SwiftUI",
+        "Shared"
+      ],
+      "symbols": [
+        {
+          "name": "iOSApp",
+          "kind": "struct",
+          "line": 5
+        }
+      ]
+    },
+    {
+      "path": "shared/src/androidMain/kotlin/com/kmp/host/android.kt",
+      "language": "kotlin",
+      "lines": 2,
+      "imports": [],
+      "symbols": []
+    },
+    {
+      "path": "shared/src/androidMain/kotlin/com/kommon/versions/KommonVersions.kt",
+      "language": "kotlin",
+      "lines": 33,
+      "imports": [],
+      "symbols": [
+        {
+          "name": "initializeAndroidFlavor",
+          "kind": "fun",
+          "line": 12
+        },
+        {
+          "name": "initializeAndroidBuildType",
+          "kind": "fun",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "shared/src/commonMain/kotlin/com/kmp/host/di/AppVersionModule.kt",
+      "language": "kotlin",
+      "lines": 31,
+      "imports": [
+        "com.kommon.versions.KommonVersions",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Named",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "AppVersionModule",
+          "kind": "class",
+          "line": 9
+        },
+        {
+          "name": "buildType",
+          "kind": "fun",
+          "line": 13,
+          "container": "AppVersionModule"
+        },
+        {
+          "name": "flavor",
+          "kind": "fun",
+          "line": 18,
+          "container": "AppVersionModule"
+        },
+        {
+          "name": "versionCode",
+          "kind": "fun",
+          "line": 23,
+          "container": "AppVersionModule"
+        },
+        {
+          "name": "versionName",
+          "kind": "fun",
+          "line": 28,
+          "container": "AppVersionModule"
+        }
+      ]
+    },
+    {
+      "path": "shared/src/commonMain/kotlin/com/kommon/versions/KommonVersions.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [],
+      "symbols": []
+    },
+    {
+      "path": "shared/src/iosCenamMain/kotlin/com/kmp/host/KoinIOS.kt",
+      "language": "kotlin",
+      "lines": 13,
+      "imports": [
+        "com.kommon.versions.initializeIosFlavor",
+        "com.kmp.host.di.initKoin"
+      ],
+      "symbols": [
+        {
+          "name": "initKoinIOS",
+          "kind": "fun",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosCenamMain/kotlin/com/kmp/host/di/HostApp.kt",
+      "language": "kotlin",
+      "lines": 17,
+      "imports": [
+        "com.kmp.feature.login.featureUi.di.LoginModule",
+        "com.kmp.feature.splash.featureUi.di.SplashModule",
+        "com.kmp.feature.welcome.featureUi.di.WelcomeModule",
+        "org.koin.core.annotation.KoinApplication"
+      ],
+      "symbols": [
+        {
+          "name": "HostApp",
+          "kind": "class",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosCenamMain/kotlin/com/kmp/host/di/HostModule.kt",
+      "language": "kotlin",
+      "lines": 22,
+      "imports": [
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.host.navigation.NavigationFeaturesRouterImpl",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.Dispatchers",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "HostModule",
+          "kind": "class",
+          "line": 15
+        },
+        {
+          "name": "ioDispatcher",
+          "kind": "fun",
+          "line": 18,
+          "container": "HostModule"
+        },
+        {
+          "name": "provideNavigationRouter",
+          "kind": "fun",
+          "line": 21,
+          "container": "HostModule"
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosCenamMain/kotlin/com/kmp/host/di/KoinInitializer.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "org.koin.dsl.KoinAppDeclaration",
+        "org.koin.plugin.module.dsl.startKoin"
+      ],
+      "symbols": [
+        {
+          "name": "initKoin",
+          "kind": "fun",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosCenamMain/kotlin/com/kmp/host/navigation/NavigationRouterImpl.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "cafe.adriel.voyager.core.screen.Screen",
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.feature.login.featureUi.presentation.navigation.LoginScreenInstance",
+        "com.kmp.feature.splash.featureUi.presentation.navigation.SplashScreenInstance",
+        "com.kmp.feature.welcome.featureUi.presentation.navigation.WelcomeScreenInstance"
+      ],
+      "symbols": [
+        {
+          "name": "NavigationFeaturesRouterImpl",
+          "kind": "class",
+          "line": 9
+        },
+        {
+          "name": "getScreenAfterSplash",
+          "kind": "fun",
+          "line": 11,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getSplashScreen",
+          "kind": "fun",
+          "line": 13,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getWelcomeScreen",
+          "kind": "fun",
+          "line": 14,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getLoginScreen",
+          "kind": "fun",
+          "line": 15,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosEcuadorMain/kotlin/com/kmp/host/KoinIOS.kt",
+      "language": "kotlin",
+      "lines": 13,
+      "imports": [
+        "com.kommon.versions.initializeIosFlavor",
+        "com.kmp.host.di.initKoin"
+      ],
+      "symbols": [
+        {
+          "name": "initKoinIOS",
+          "kind": "fun",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosEcuadorMain/kotlin/com/kmp/host/di/HostApp.kt",
+      "language": "kotlin",
+      "lines": 17,
+      "imports": [
+        "com.kmp.feature.login.featureUi.di.LoginModule",
+        "com.kmp.feature.splash.featureUi.di.SplashModule",
+        "com.kmp.feature.welcome.featureUi.di.WelcomeModule",
+        "org.koin.core.annotation.KoinApplication"
+      ],
+      "symbols": [
+        {
+          "name": "HostApp",
+          "kind": "class",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosEcuadorMain/kotlin/com/kmp/host/di/HostModule.kt",
+      "language": "kotlin",
+      "lines": 22,
+      "imports": [
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.host.navigation.NavigationFeaturesRouterImpl",
+        "kotlinx.coroutines.CoroutineDispatcher",
+        "kotlinx.coroutines.Dispatchers",
+        "org.koin.core.annotation.ComponentScan",
+        "org.koin.core.annotation.Configuration",
+        "org.koin.core.annotation.Module",
+        "org.koin.core.annotation.Single"
+      ],
+      "symbols": [
+        {
+          "name": "HostModule",
+          "kind": "class",
+          "line": 15
+        },
+        {
+          "name": "ioDispatcher",
+          "kind": "fun",
+          "line": 18,
+          "container": "HostModule"
+        },
+        {
+          "name": "provideNavigationRouter",
+          "kind": "fun",
+          "line": 21,
+          "container": "HostModule"
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosEcuadorMain/kotlin/com/kmp/host/di/KoinInitializer.kt",
+      "language": "kotlin",
+      "lines": 12,
+      "imports": [
+        "org.koin.dsl.KoinAppDeclaration",
+        "org.koin.plugin.module.dsl.startKoin"
+      ],
+      "symbols": [
+        {
+          "name": "initKoin",
+          "kind": "fun",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosEcuadorMain/kotlin/com/kmp/host/navigation/NavigationFeaturesRouterImpl.kt",
+      "language": "kotlin",
+      "lines": 16,
+      "imports": [
+        "cafe.adriel.voyager.core.screen.Screen",
+        "com.kmp.core.navigation.router.NavigationFeaturesRouter",
+        "com.kmp.feature.login.featureUi.presentation.navigation.LoginScreenInstance",
+        "com.kmp.feature.splash.featureUi.presentation.navigation.SplashScreenInstance",
+        "com.kmp.feature.welcome.featureUi.presentation.navigation.WelcomeScreenInstance"
+      ],
+      "symbols": [
+        {
+          "name": "NavigationFeaturesRouterImpl",
+          "kind": "class",
+          "line": 9
+        },
+        {
+          "name": "getScreenAfterSplash",
+          "kind": "fun",
+          "line": 11,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getSplashScreen",
+          "kind": "fun",
+          "line": 13,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getWelcomeScreen",
+          "kind": "fun",
+          "line": 14,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        },
+        {
+          "name": "getLoginScreen",
+          "kind": "fun",
+          "line": 15,
+          "container": "NavigationFeaturesRouterImpl",
+          "modifiers": [
+            "override"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosMain/kotlin/com/kmp/host/MainViewController.kt",
+      "language": "kotlin",
+      "lines": 22,
+      "imports": [
+        "androidx.compose.ui.window.ComposeUIViewController",
+        "com.kmp.feature.splash.featureUi.presentation.controller.NavigationController",
+        "io.github.aakira.napier.DebugAntilog",
+        "io.github.aakira.napier.Napier",
+        "io.kmpbits.splash.SplashConfig"
+      ],
+      "symbols": [
+        {
+          "name": "MainViewController",
+          "kind": "fun",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "path": "shared/src/iosMain/kotlin/com/kommon/versions/KommonVersions.kt",
+      "language": "kotlin",
+      "lines": 48,
+      "imports": [
+        "platform.Foundation.NSBundle",
+        "kotlin.experimental.ExperimentalNativeApi"
+      ],
+      "symbols": [
+        {
+          "name": "initializeIosFlavor",
+          "kind": "fun",
+          "line": 12
+        },
+        {
+          "name": "getString",
+          "kind": "fun",
+          "line": 25,
+          "modifiers": [
+            "private"
+          ]
+        }
+      ]
+    }
+  ]
+}

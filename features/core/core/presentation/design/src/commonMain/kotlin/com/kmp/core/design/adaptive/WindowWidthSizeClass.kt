@@ -1,0 +1,17 @@
+package com.kmp.core.design.adaptive
+
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+
+enum class WindowWidthSizeClass {
+    Compact,
+    Medium,
+    Expanded
+}
+
+internal fun windowWidthSizeClass(width: Dp): WindowWidthSizeClass = when {
+    width < 600.dp -> WindowWidthSizeClass.Compact
+    width < 840.dp -> WindowWidthSizeClass.Medium
+    else -> WindowWidthSizeClass.Expanded
+}
+

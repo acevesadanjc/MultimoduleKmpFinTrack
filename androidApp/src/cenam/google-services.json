@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "479722947810",
+    "project_id": "kmp-cenam",
+    "storage_bucket": "kmp-cenam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479722947810:android:b4f5314e90feaea29f0abb",
+        "android_client_info": {
+          "package_name": "com.kmp.host.cenam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpRz-zYsM1pK7NwhJNAQxVrwQctdyrIXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

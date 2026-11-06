@@ -9,6 +9,7 @@ import kotlinx.coroutines.flow.Flow
 interface UserDataStoreSource {
     suspend fun getUserToken(): Flow<String?>
     suspend fun saveUserToken(token: String)
+    suspend fun removeToken()
     suspend fun getStatusUserCredentials(): Flow<Boolean>
     suspend fun saveStatusUserCredentials(status: Boolean)
 }

@@ -24,6 +24,10 @@ class UserDataStoreRepositoryImpl(
         emit(value = usersDataStoreSource.saveUserToken(token = token))
     }.flowOn(context = ioDispatcher)
 
+    override suspend fun removeUserToken(): Flow<Unit>  = flow {
+        emit(value = usersDataStoreSource.removeToken())
+    }.flowOn(context = ioDispatcher)
+
     override suspend fun saveStatusUserCredentials(status: Boolean): Flow<Unit> = flow {
         emit(value = usersDataStoreSource.saveStatusUserCredentials(status = status))
     }.flowOn(context = ioDispatcher)

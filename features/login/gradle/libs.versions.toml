@@ -45,6 +45,8 @@ feature-base-libs = [
     # Core
     'core-design',
     'core-navigation',
+    'core-domain',
+    'core-tools',
     # Proporciona: Viewmodel y viewModelScope (KMP)
     'androidx-lifecycle-viewmodel',
     # Proporciona: StateFlow, MutableStateFlow y CoroutineScope

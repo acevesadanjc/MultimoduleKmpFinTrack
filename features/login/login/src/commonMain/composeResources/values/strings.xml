@@ -3,4 +3,29 @@
     <string name="idle">Idle</string>
     <string name="example_device">Example Device</string>
     <string name="example_tablet">Example Tablet</string>
+
+    <!-- Error -->
+    <string name="error">Error</string>
+    <string name="please_try_again_later">Please try again later</string>
+
+    <!-- General -->
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="email_empty">Email empty</string>
+    <string name="password_empty">Password empty</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="password_not_valid">Password not valid</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="login_title">FinTrack</string>
+    <string name="login_description">Tus finanzas, claras incluso sin conexión.</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Iniciar sesión</string>">
+    <string name="login_create_account">Crear una cuenta</string>">
+    <string name="login_field_message">El campo password no puede estar vacio</string>">
+    <string name="login_field_email">Correo</string>
+    <string name="login_field_password">Contraseña</string>
+
 </resources>

@@ -38,6 +38,7 @@ import com.infinum.arkive.annotations.ArkiveComposable
 import com.kmp.core.design.component.image.ImageCircular
 import com.kmp.core.design.component.text.TextMedium
 import com.kmp.core.design.component.text.TextMediumBold
+import com.kmp.core.design.component.text.TextNormal
 import com.kmp.core.design.dimen.Dimens
 import com.kmp.core.design.generated.resources.Res
 import com.kmp.core.design.generated.resources.example
@@ -82,14 +83,14 @@ fun TextFieldSimple(
         ),
         keyboardActions = keyboardActions,
         label = {
-            TextMediumBold(
+            TextNormal(
                 color = labelColor,
                 text = label,
                 textAlign = labelTextAlign,
             )
         },
         placeholder = {
-            TextMedium(
+            TextNormal(
                 color = placeholderColor,
                 text = placeholder,
                 textAlign = placeholderTextAlign,
@@ -151,14 +152,14 @@ fun TextFieldPassword(
         ),
         keyboardActions = keyboardActions,
         label = {
-            TextMediumBold(
+            TextNormal(
                 color = labelColor,
                 text = label,
                 textAlign = labelTextAlign,
             )
         },
         placeholder = {
-            TextMedium(
+            TextNormal(
                 color = placeholderColor,
                 text = placeholder,
                 textAlign = placeholderTextAlign,

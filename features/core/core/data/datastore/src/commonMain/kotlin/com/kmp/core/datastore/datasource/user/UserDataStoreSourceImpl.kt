@@ -19,6 +19,10 @@ class UserDataStoreSourceImpl(
     override suspend fun saveUserToken(token: String) =
         dataStore.saveToken(token)
 
+    override suspend fun removeToken() {
+        dataStore.removeToken()
+    }
+
     override suspend fun getStatusUserCredentials(): Flow<Boolean> =
         dataStore.statusUserCredentials
 

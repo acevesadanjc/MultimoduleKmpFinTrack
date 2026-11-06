@@ -4,9 +4,13 @@ object Network {
 
     object Client {
         // Base url
-        const val BASE_URL = "https://server-dummy-hitss.onrender.com/"
+        const val BASE_URL = "https://fintrack-hitss.onrender.com"
+
         // Endpoint
-        const val URL_LOGIN = "api/v1/auth/login"
+        const val ENDPOINT_LOGIN = "/api/v1/auth/login"
+        const val ENDPOINT_REGISTER = "/api/v1/auth/register"
+        const val ENDPOINT_GET_ME = "/api/v1/users/me"
+        const val ENDPOINT_DASHBOARD = "/api/v1/dashboard"
     }
 
     object Constants{

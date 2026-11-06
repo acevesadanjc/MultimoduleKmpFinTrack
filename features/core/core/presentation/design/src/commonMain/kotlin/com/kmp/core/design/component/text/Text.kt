@@ -4,6 +4,7 @@
  */
 package com.kmp.core.design.component.text
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.LinkAnnotation
@@ -26,6 +28,7 @@ import com.infinum.arkive.annotations.ArkiveComposable
 import com.kmp.core.design.dimen.Dimens
 import com.kmp.core.design.generated.resources.Res
 import com.kmp.core.design.generated.resources.example
+import com.kmp.core.design.theme.AppTheme
 import org.jetbrains.compose.resources.stringResource
 
 /**
@@ -285,6 +288,36 @@ fun TextUrlLink(
     )
 }
 
+// adjetivo + sustantivo
+@Composable
+fun ClickableText(
+    modifier: Modifier = Modifier,
+    fontSize: TextUnit = Dimens.textSizeExtraSmall,
+    color: Color = AppTheme.colors.primary,
+    text: String,
+    textAlign: TextAlign = TextAlign.Center,
+    onClick: () -> Unit = {}
+) {
+    Box(
+        modifier = modifier,
+        contentAlignment = Alignment.Center
+    ) {
+        Text(
+            modifier = modifier.clickable(
+                onClick = onClick
+            ),
+            text = text,
+            textAlign = textAlign,
+            style = MaterialTheme.typography.bodySmall.copy(
+                fontSize = fontSize,
+                fontWeight = FontWeight.SemiBold,
+            ),
+            color = color,
+        )
+
+    }
+}
+
 @ArkiveComposable(
     name = "Text Small Extra",
     group = "Texts",
@@ -515,6 +548,28 @@ fun TextUrlLinkPreview() {
             text = stringResource(Res.string.example),
             linkText = stringResource(Res.string.example),
             url = stringResource(Res.string.example),
+        )
+    }
+}
+
+@ArkiveComposable(
+    name = "Clickable Text",
+    group = "Texts",
+    tags = ["tag"],
+    designNodeId = "2001-8",
+)
+@Preview(
+    showBackground = true,
+)
+@Composable
+fun ClickableTextPreview() {
+    Box(
+        modifier = Modifier.padding(all = Dimens.padding16),
+    ) {
+        ClickableText(
+            color = AppTheme.colors.primary,
+            text = stringResource(Res.string.example),
+            onClick = {},
         )
     }
 }

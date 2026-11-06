@@ -10,5 +10,12 @@ import kotlinx.serialization.Serializable
 open class BaseResponse(
     val success: Boolean? = false,
     val message: String? = "",
-    val codeServices: Int? = null
-)
+    val error: ErrorPayload? = null
+) {
+    /**
+     * Retorna true si la respuesta no trae objeto 'error'.
+     */
+    val isSuccessful: Boolean
+        get() = error == null
+
+}

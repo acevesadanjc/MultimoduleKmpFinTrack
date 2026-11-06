@@ -20,10 +20,10 @@ data object SplashScreenInstance : Screen {
         val router: NavigationFeaturesRouter = koinInject()
         SplashScreen(
             onNavigateToNextScreen = {
-                //navigator.replaceAll(router.getScreenAfterSplash())
+                navigator.replaceAll(router.getLoginScreen())
             },
             onNavigateToWelcome = {
-                //navigator.replaceAll(router.getDeepLinkScreen(DeepLinkCoordinator.getDeepLinkRoute()))
+                navigator.replaceAll(router.getLoginScreen())
             }
         )
     }

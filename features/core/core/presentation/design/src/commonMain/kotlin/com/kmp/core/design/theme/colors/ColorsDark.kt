@@ -63,14 +63,23 @@ val darkModeAppColors = AppColors(
         success = Color(0xFF34D399)
     ),
     text = ColorTexts(
-        black = Color(0xFF000000),
+        black = Color(0xFF1A1F29),
         white = Color(0xFFFFFFFF),
-        link = Color(0xFF83CEF6)
+        gray = Color(0xFF7A8291),
+        blue = Color(0xFF0F459E),
+        fieldLabel = Color(0xFF1F242E),
+        placeholder = Color(0xFFA1A1A1),
+        link = Color(0xFF1470D1),
+        positiveTrend = Color(0xFF17A36E),
+        negativeTrend = Color(0xFFE5454D),
     ),
     backgrounds = ColorBackgrounds(
         black = Color(0xFF000000),
         white = Color(0xFFFFFFFF),
         yellow = Color(0xFFFFB700),
-        blue = Color(0xFF345CDE)
+        blue = Color(0xFF0066FF),
+        indicator = Color(0xFFE8F0FC),
+        positiveTrend = Color(0xFFE5FAF2),
+        negativeTrend = Color(0xFFFFEDF0),
     )
 )

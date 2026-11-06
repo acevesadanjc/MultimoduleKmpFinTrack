@@ -34,6 +34,12 @@ class AppDataStore(
         dataStore.edit { data -> data[DS.KEY.USER_TOKEN] = token }
     }
 
+    suspend fun removeToken() {
+        dataStore.edit { preferences ->
+            preferences.remove(DS.KEY.USER_TOKEN)
+        }
+    }
+
     suspend fun saveStatusUserCredentials(status: Boolean) {
         dataStore.edit { data -> data[DS.KEY.STATUS_USER_CREDENTIALS] = status }
     }

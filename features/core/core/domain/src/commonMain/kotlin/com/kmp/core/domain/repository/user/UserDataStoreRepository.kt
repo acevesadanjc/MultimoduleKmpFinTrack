@@ -6,5 +6,6 @@ interface UserDataStoreRepository {
     suspend fun getUserToken(): Flow<String?>
     suspend fun getStatusUserCredentials(): Flow<Boolean>
     suspend fun saveUserToken(token: String): Flow<Unit>
+    suspend fun removeUserToken(): Flow<Unit>
     suspend fun saveStatusUserCredentials(status: Boolean): Flow<Unit>
 }

@@ -28,4 +28,7 @@ class UserDataStoreSourceImpl(
 
     override suspend fun saveStatusUserCredentials(status: Boolean) =
         dataStore.saveStatusUserCredentials(status)
+
+    override suspend fun saveEmail(email: String) =
+        dataStore.saveEmail(email)
 }

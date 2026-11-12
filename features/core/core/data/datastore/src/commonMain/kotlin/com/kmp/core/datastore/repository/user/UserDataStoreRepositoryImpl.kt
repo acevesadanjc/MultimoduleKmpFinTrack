@@ -32,4 +32,7 @@ class UserDataStoreRepositoryImpl(
         emit(value = usersDataStoreSource.saveStatusUserCredentials(status = status))
     }.flowOn(context = ioDispatcher)
 
+    override suspend fun saveEmail(email: String): Flow<Unit> = flow {
+        emit(value = usersDataStoreSource.saveEmail(email = email))
+    }.flowOn(context = ioDispatcher)
 }

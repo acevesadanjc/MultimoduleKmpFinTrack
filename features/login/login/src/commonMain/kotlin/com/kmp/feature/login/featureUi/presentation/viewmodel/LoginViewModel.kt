@@ -32,7 +32,7 @@ import org.koin.core.annotation.KoinViewModel
 class LoginViewModel(
     private val networkUseCase: LoginNetworkUseCase,
     private val networkDataStoreUseCase: UserDataStoreUseCase,
-    private val validateLoginUseCase: LoginValidationUseCase
+    private val validateLoginUseCase: LoginValidationUseCase,
 ) : ViewModel() {
 
     private val _loginUiState = MutableStateFlow(LoginUiState())
@@ -63,25 +63,24 @@ class LoginViewModel(
         _loginUiState.update { state -> state.copy(navigationTarget = LoginNavigationTargetUiState.Register) }
     }
 
-    fun validateFields() {
-        viewModelScope.launch {
-            val validateFields = validateLoginUseCase.invoke(
-                password = loginUiState.value.password
-            )
-            if (validateFields.hasError) {
-                val errorMessage = validateFields.message?.let { getString(it) }.orEmpty()
-                _loginUiState.update { state ->
-                    state.copy(
-                        errorDialog = showErrorDialog(
-                            errorMessage
-                        )
+    fun validateFields() = viewModelScope.launch {
+        val validateFields = validateLoginUseCase.invoke(
+            password = loginUiState.value.password
+        )
+        if (validateFields.hasError) {
+            val errorMessage = validateFields.message?.let { getString(it) }.orEmpty()
+            _loginUiState.update { state ->
+                state.copy(
+                    errorDialog = showErrorDialog(
+                        errorMessage
                     )
-                }
-            } else {
-                login()
+                )
             }
+        } else {
+            login()
         }
     }
+
 
     private fun login() = viewModelScope.launch {
         networkUseCase.login(
@@ -98,10 +97,12 @@ class LoginViewModel(
                 )
             }
         }.collect { result ->
-            when(result) {
+            when (result) {
                 is NetworkResult.Success -> {
                     saveAccessToken(accessToken = result.response.accessToken)
+                    saveUserEmail(email = loginUiState.value.email)
                 }
+
                 is NetworkResult.Error -> {
                     _loginUiState.update { state ->
                         state.copy(
@@ -125,6 +126,12 @@ class LoginViewModel(
         }.collect {
             _loginUiState.update { state -> state.copy(isLoading = StatusLoading.DISMISS_LOADING) }
             _loginUiState.update { state -> state.copy(navigationTarget = LoginNavigationTargetUiState.Home) }
+        }
+    }
+
+    private fun saveUserEmail(email: String) = viewModelScope.launch {
+        networkDataStoreUseCase.saveEmail(email = email).collect {
+
         }
     }
 

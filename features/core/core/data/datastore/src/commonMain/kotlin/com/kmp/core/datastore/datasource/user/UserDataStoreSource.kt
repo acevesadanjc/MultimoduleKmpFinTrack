@@ -12,4 +12,5 @@ interface UserDataStoreSource {
     suspend fun removeToken()
     suspend fun getStatusUserCredentials(): Flow<Boolean>
     suspend fun saveStatusUserCredentials(status: Boolean)
+    suspend fun saveEmail(email: String)
 }

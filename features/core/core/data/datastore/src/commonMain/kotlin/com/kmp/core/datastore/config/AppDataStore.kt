@@ -43,6 +43,15 @@ class AppDataStore(
     suspend fun saveStatusUserCredentials(status: Boolean) {
         dataStore.edit { data -> data[DS.KEY.STATUS_USER_CREDENTIALS] = status }
     }
+
+    suspend fun getEmail(email: String): Flow<String?> = dataStore.data
+        .catch { exception ->
+            if (exception is IOException) emit(emptyPreferences()) else throw exception
+        }.map { data -> data[DS.KEY.USER_EMAIL] }
+
+    suspend fun saveEmail(email: String) {
+        dataStore.edit { data -> data[DS.KEY.USER_EMAIL] = email }
+    }
 }
 
 expect fun createDataStore(): DataStore<Preferences>

@@ -8,4 +8,5 @@ interface UserDataStoreRepository {
     suspend fun saveUserToken(token: String): Flow<Unit>
     suspend fun removeUserToken(): Flow<Unit>
     suspend fun saveStatusUserCredentials(status: Boolean): Flow<Unit>
+    suspend fun saveEmail(email: String): Flow<Unit>
 }

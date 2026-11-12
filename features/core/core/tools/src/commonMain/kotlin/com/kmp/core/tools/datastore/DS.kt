@@ -12,6 +12,7 @@ object DS {
 
     object KEY {
         val USER_TOKEN = stringPreferencesKey("user_token")
+        val USER_EMAIL = stringPreferencesKey("user_email")
         val STATUS_USER_CREDENTIALS = booleanPreferencesKey("status_user_credentials")
     }
 }

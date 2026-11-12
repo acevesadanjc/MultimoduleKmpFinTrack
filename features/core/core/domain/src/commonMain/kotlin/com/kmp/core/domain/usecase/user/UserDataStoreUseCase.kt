@@ -18,4 +18,7 @@ class UserDataStoreUseCase(
 
     suspend fun saveStatusUserCredentials(status: Boolean): Flow<Unit> =
         repository.saveStatusUserCredentials(status = status)
+
+    suspend fun saveEmail(email: String): Flow<Unit> =
+        repository.saveEmail(email = email)
 }
